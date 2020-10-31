@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+		<style>
+
+		ul {
+		  list-style-type: none;
+		  margin: 0;
+		  padding: 0;
+		  overflow: hidden;
+		  background-color: #333;
+		  font-family: 'Open Sans', sans-serif;
+		}
+
+		li {
+		  float: left;
+		}
+
+		li a {
+		  display: block;
+		  color: white;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		}
+
+		li a:hover:not(.active) {
+		  background-color: #111;
+		}
+
+		.active {
+		  background-color: #4CAF50;
+		}
+
+		img {
+			padding-top: 50px;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		  
+		}
+		.left {
+			display: block;
+			float: left;
+			width: 10%;
+			height: 10%;
+			padding-left: 20%;
+			padding-top: 15%;
+			
+		}
+		
+		.right {
+			display: block;
+			float: right;
+			width: 10%;
+			height: 10%;
+			padding-right: 20%;
+			padding-top: 15%;
+		}
+		.CARD {
+			
+			margin: auto;
+			margin-top: 10px;
+			width: 33%;
+			height: 80%;
+			background-color: #e0e0e0;
+			font-family: 'Open Sans', sans-serif;
+			text-align: center;
+			}
+		</style>
+	
+	</head>
+	
+	<nav>
+	<!--Nav Bar -->
+		<ul>
+		  <li><a class="active" href="#SWIPE">Swipe</a></li>
+		  <li><a href="#MATCHES">Matches</a></li>
+		  <li><a href="#SURPRISE">Surprise Me!</a></li>
+		  <li><a href="#ACCOUNT">Account</a></li>
+		</ul>
+	</nav>
+	
+	<body>
+		<div class = left>
+			<img src="left.png" alt="left" width="100%" height="100%">
+		</div>
+		<div class = right>
+			<img src="right.png" alt="right" width="100%" height="100%">
+		</div>
+		<div class = "CARD">
+			<!--Image -->
+			<img src="test.jpg" alt="test" width="100%" height="100%">
+			
+			<h1>FOOD NAME</h1>
+			<p>$$	Description of the food</p>
+			
+		</div>
+	</body>
+</html>

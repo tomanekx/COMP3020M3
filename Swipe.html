@@ -1,82 +1,12 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
-		<style>
-
-		ul {
-		  list-style-type: none;
-		  margin: 0;
-		  padding: 0;
-		  overflow: hidden;
-		  background-color: DimGrey;
-		  font-family: 'Open Sans', sans-serif;
-		}
-
-		li {
-		  float: left;
-		  width: 25%;
-		}
-
-		li a {
-		  display: block;
-		  color: white;
-		  text-align: center;
-		  padding: 14px 16px;
-		  text-decoration: none;
-		}
-
-		li a:hover:not(.active) {
-		  background-color: #111;
-		}
-
-		.active {
-		  background-color: tomato;
-		}
-
-		img {
-			padding-top: 50px;
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-		  
-		}
-		.left {
-			display: block;
-			float: left;
-			width: 10%;
-			height: 10%;
-			padding-left: 20%;
-			padding-top: 15%;
-			
-		}
-		
-		.right {
-			display: block;
-			float: right;
-			width: 10%;
-			height: 10%;
-			padding-right: 20%;
-			padding-top: 15%;
-		}
-		.CARD {
-			
-			margin: auto;
-			margin-top: 10px;
-			width: 33%;
-			height: 80%;
-			background-color: LightGrey;
-			font-family: 'Open Sans', sans-serif;
-			text-align: center;
-			}
-		</style>
-	
+		<link rel="stylesheet" href="styles.css">
 	</head>
 	
 	<nav>
-	<!--Nav Bar -->
 		<ul>
-		  <li><a class="active" href="#SWIPE">Swipe</a></li>
+		  <li><a class="active">Swipe</a></li>
 		  <li><a href="#MATCHES">Matches</a></li>
 		  <li><a href="#SURPRISE">Surprise Me!</a></li>
 		  <li><a href="#ACCOUNT">Account</a></li>
@@ -84,18 +14,23 @@
 	</nav>
 	
 	<body>
-		<div class = "triangle-left"> </div>
-		
-		<div class ="triangle-right"> </div>
-		
-
-		<div class = "CARD">
-			<!--Image -->
-			<img src="test.jpg" alt="test" width="100%" height="100%">
+		<h1> TinderEats </h1>
+		<div class = "container">
+			<button class = "triangle-left"> </button>
 			
-			<h1>FOOD NAME</h1>
-			<p>$$	Description of the food</p>
-			
+			<button class ="triangle-right"> </button>
+			<div class = "CARD">
+				<img src="1.jpg" alt="1" width="100%" height="100%">
+				
+				<h1>FOOD NAME
+				<br>$$
+				<br>RESTAURANT</h1>
+				<p> THIS IS A DESCRIPTION OF THE FOOD </p>
+				<button class="button2">I Want This!</button>
+				
+			</div>
 		</div>
+		<button class = "button1">Matches</button>
+		<p><a href="#SUPPORT"> Support </p>
 	</body>
 </html>

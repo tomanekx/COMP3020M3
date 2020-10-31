@@ -1,0 +1,97 @@
+ul {
+		  list-style-type: none;
+		  margin: 0;
+		  padding: 0;
+		  overflow: hidden;
+		  background-color: DimGrey;
+		  font-family: 'Open Sans', sans-serif;
+		}
+
+		li {
+		  float: left;
+		  width: 25%;
+		}
+
+		li a {
+		  display: block;
+		  color: white;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		}
+
+		li a:hover:not(.active) {
+		  background-color: #111;
+		}
+
+		.active {
+		  background-color: tomato;
+		}
+
+		img {
+
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		  
+		}
+		.left {
+			display: block;
+			float: left;
+			width: 10%;
+			height: 10%;
+			padding-left: 20%;
+			padding-top: 15%;
+			
+		}
+		
+		.right {
+			display: block;
+			float: right;
+			width: 10%;
+			height: 10%;
+			padding-right: 20%;
+			padding-top: 15%;
+		}
+		.CARD {
+			margin: auto;
+			margin-top: 10px;
+			width: 30%;
+			height: 80%;
+			background-color: LightGrey;
+			font-family: 'Open Sans', sans-serif;
+			text-align: center;
+			}
+			
+			.triangle-left {
+			width: 0;
+			height: 0;
+			border: 100% solid;
+			border-top: 50px solid transparent;
+			border-right: 50px solid DimGrey;
+			border-bottom: 50px solid transparent;
+			float: left;
+			margin-left: 30%;
+			margin-top: 10%;
+
+		}
+		
+		.triangle-left:hover {
+			border-right: 50px solid Tomato
+		}
+		
+		.triangle-right {
+			width: 0;
+			height: 0;
+			border: 100% solid;
+			border-top: 50px solid transparent;
+			border-left: 50px solid DimGrey;
+			border-bottom: 50px solid transparent;
+			float: right;
+			margin-right: 30%;
+			margin-top: 10%;
+		}
+		
+		.triangle-right:hover {
+			border-left: 50px solid Tomato
+		}

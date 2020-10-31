@@ -1,18 +1,28 @@
-ul {
+	body {
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	h1 {
+
+	}
+	
+	container {
+		height = 80%;
+	}
+	
+	ul {
 		  list-style-type: none;
 		  margin: 0;
 		  padding: 0;
 		  overflow: hidden;
 		  background-color: DimGrey;
-		  font-family: 'Open Sans', sans-serif;
 		}
 
-		li {
+	li {
 		  float: left;
 		  width: 25%;
 		}
 
-		li a {
+	li a {
 		  display: block;
 		  color: white;
 		  text-align: center;
@@ -20,78 +30,97 @@ ul {
 		  text-decoration: none;
 		}
 
-		li a:hover:not(.active) {
+	li a:hover:not(.active) {
 		  background-color: #111;
 		}
 
-		.active {
+	.active {
 		  background-color: tomato;
 		}
 
-		img {
-
+	img {
 			display: block;
 			margin-left: auto;
 			margin-right: auto;
 		  
 		}
-		.left {
-			display: block;
-			float: left;
-			width: 10%;
-			height: 10%;
-			padding-left: 20%;
-			padding-top: 15%;
-			
-		}
-		
-		.right {
-			display: block;
-			float: right;
-			width: 10%;
-			height: 10%;
-			padding-right: 20%;
-			padding-top: 15%;
-		}
-		.CARD {
+	.CARD {
 			margin: auto;
-			margin-top: 10px;
+			margin-top: 1%;
+			margin-bottom:1%;
 			width: 30%;
 			height: 80%;
 			background-color: LightGrey;
-			font-family: 'Open Sans', sans-serif;
-			text-align: center;
+			padding-top: 10px;
+			padding-left: 10px;
+			padding-bottom: 10px;
+			padding-right: 10px;
+			text-align: left;
 			}
 			
-			.triangle-left {
+	.triangle-left {
 			width: 0;
 			height: 0;
 			border: 100% solid;
 			border-top: 50px solid transparent;
 			border-right: 50px solid DimGrey;
 			border-bottom: 50px solid transparent;
+			border-left: 0px;
+			background-color: transparent;
 			float: left;
 			margin-left: 30%;
 			margin-top: 10%;
 
 		}
 		
-		.triangle-left:hover {
+	.triangle-left:hover {
 			border-right: 50px solid Tomato
 		}
 		
-		.triangle-right {
+	.triangle-right {
 			width: 0;
 			height: 0;
 			border: 100% solid;
 			border-top: 50px solid transparent;
 			border-left: 50px solid DimGrey;
 			border-bottom: 50px solid transparent;
+			border-right: 0px;
+			background-color: transparent;
 			float: right;
 			margin-right: 30%;
 			margin-top: 10%;
 		}
 		
-		.triangle-right:hover {
+	.triangle-right:hover {
 			border-left: 50px solid Tomato
+		}
+		
+	.button1 {
+
+		background-color: Tomato;
+		display: block;
+		float: right;
+		margin-right: 20px;
+		width: auto;
+		border: none;
+		color: white;
+		padding: 15px 32px;
+		text-align: center;
+		text-decoration: none;
+		font-size: 16px;
+		}
+		
+	.button2 {
+		  background-color: Tomato;
+		  display: block;
+		  margin-left: auto;
+		  margin-right: auto;
+		  width: 90%;
+		  border: none;
+		  color: white;
+		  padding: 15px 32px;
+		  text-align: center;
+		  text-decoration: none;
+
+		  font-size: 16px;
 		}

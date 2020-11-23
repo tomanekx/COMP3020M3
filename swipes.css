@@ -1,126 +1,130 @@
-	body {
-		font-family: Arial, Helvetica, sans-serif;
-	}
-	h1 {
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
 
-	}
-	
-	container {
-		height = 80%;
-	}
-	
-	ul {
-		  list-style-type: none;
-		  margin: 0;
-		  padding: 0;
-		  overflow: hidden;
-		  background-color: DimGrey;
-		}
+}
 
-	li {
-		  float: left;
-		  width: 25%;
-		}
+container {
+    height : 80%;
+}
 
-	li a {
-		  display: block;
-		  color: white;
-		  text-align: center;
-		  padding: 14px 16px;
-		  text-decoration: none;
-		}
+ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: DimGrey;
+    }
 
-	li a:hover:not(.active) {
-		  background-color: #111;
-		}
+li {
+      float: left;
+      width: 25%;
+    }
 
-	.active {
-		  background-color: tomato;
-		}
+li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
 
-	img {
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-		  
-		}
-	.CARD {
-			margin: auto;
-			margin-top: 1%;
-			margin-bottom:1%;
-			width: 30%;
-			height: 80%;
-			background-color: LightGrey;
-			padding-top: 10px;
-			padding-left: 10px;
-			padding-bottom: 10px;
-			padding-right: 10px;
-			text-align: left;
-			}
-			
-	.triangle-left {
-			width: 0;
-			height: 0;
-			border: 100% solid;
-			border-top: 50px solid transparent;
-			border-right: 50px solid DimGrey;
-			border-bottom: 50px solid transparent;
-			border-left: 0px;
-			background-color: transparent;
-			float: left;
-			margin-left: 30%;
-			margin-top: 10%;
+li a:hover:not(.active) {
+      background-color: #111;
+    }
 
-		}
-		
-	.triangle-left:hover {
-			border-right: 50px solid Tomato
-		}
-		
-	.triangle-right {
-			width: 0;
-			height: 0;
-			border: 100% solid;
-			border-top: 50px solid transparent;
-			border-left: 50px solid DimGrey;
-			border-bottom: 50px solid transparent;
-			border-right: 0px;
-			background-color: transparent;
-			float: right;
-			margin-right: 30%;
-			margin-top: 10%;
-		}
-		
-	.triangle-right:hover {
-			border-left: 50px solid Tomato
-		}
-		
-	.button1 {
+.active {
+      background-color: tomato;
+    }
 
-		background-color: Tomato;
-		display: block;
-		float: right;
-		margin-right: 20px;
-		width: auto;
-		border: none;
-		color: white;
-		padding: 15px 32px;
-		text-align: center;
-		text-decoration: none;
-		font-size: 16px;
-		}
-		
-	.button2 {
-		  background-color: Tomato;
-		  display: block;
-		  margin-left: auto;
-		  margin-right: auto;
-		  width: 90%;
-		  border: none;
-		  color: white;
-		  padding: 15px 32px;
-		  text-align: center;
-		  text-decoration: none;
+img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      
+    }
+.CARD {
+        margin: auto;
+        margin-top: 1%;
+        margin-bottom:1%;
+        width: 30%;
+        height: 80%;
+        background-color: LightGrey;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-bottom: 10px;
+        padding-right: 10px;
+        text-align: left;
+        }
+        
+.triangle-left {
+        position: relative;
+        left: -35px;
+        width: 0;
+        height: 0;
+        border: 100% solid;
+        border-top: 50px solid transparent;
+        border-right: 50px solid DimGrey;
+        border-bottom: 50px solid transparent;
+        border-left: 0px;
+        background-color: transparent;
+        float: left;
+        margin-left: 30%;
+        margin-top: 10%;
 
-		  font-size: 16px;
-		}
+    }
+    
+.triangle-left:hover {
+        border-right: 50px solid Tomato
+    }
+    
+.triangle-right {
+        position: relative;
+        right: -35px;
+        width: 0;
+        height: 0;
+        border: 100% solid;
+        border-top: 50px solid transparent;
+        border-left: 50px solid DimGrey;
+        border-bottom: 50px solid transparent;
+        border-right: 0px;
+        background-color: transparent;
+        float: right;
+        margin-right: 30%;
+        margin-top: 10%;
+    }
+    
+.triangle-right:hover {
+        border-left: 50px solid Tomato
+    }
+    
+.button1 {
+
+    background-color: Tomato;
+    display: block;
+    float: right;
+    margin-right: 20px;
+    width: auto;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    }
+    
+.button2 {
+      background-color: Tomato;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 90%;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+
+      font-size: 16px;
+    }

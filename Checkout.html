@@ -1,7 +1,18 @@
 <!DOCTYPE html>
 <html>
+	<style>
+		.container {
+  			display: block;
+  			position: relative;
+  			padding-left: 35px;
+  			margin-bottom: 12px;
+  			cursor: pointer;
+  			font-size: 18px;
+		}
+	</style>
+	
 	<head>
-		<link id="pagestyle" rel="stylesheet" type="text/css" href="checkout.css">
+		<link id="pagestyle" rel="stylesheet" type="text/css" href="styles.css">
 		
 
 	</head>
@@ -18,10 +29,39 @@
 	
 	<body>
 		<h1> TinderEats </h1>
-		
+		<h2>Checkout</h2>
+		<h3>Redeem Rewards</h3>
+
+		<label class="container">Free Delivery 10 Points
+  		<input type="checkbox">
+ 	 	<span class="checkmark"></span>
+		</label>
+
+		<label class="container">$10 Off 20 Points
+  		<input type="checkbox">
+  		<span class="checkmark"></span>
+		</label>
+
+		<form name="form1" id="form1" action="/action_page.php">
+  			Address: <select name="subject" id="subject">
+    			<option value="" selected="selected">Select Address</option>
+  			</select>
+		</form>
 		
 		<p><a href="#SUPPORT"> Support </p>
 	</body>
+	<script>
+		var subjectObject = {
+			"Address 1", "Address 2"
+		}
+
+		window.onload = function() {
+  			var subjectSel = document.getElementById("subject");
+			for (var x in subjectObject) {
+    				subjectSel.options[subjectSel.options.length] = new Option(x, x);
+  			}
+		}
+	</script>
 	<script type="text/javascript" src="scripttest.js"></script>
 </html>
 

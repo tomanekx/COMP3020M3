@@ -1,7 +1,40 @@
 <!DOCTYPE html>
 <html>
+	<style>
+		.tab {
+  			overflow: hidden;
+  			border: 1px solid #ccc;
+  			background-color: #f1f1f1;
+		}
+
+		.tab button {
+  			background-color: DimGrey;
+  			float: left;
+ 			border: none;
+ 			outline: none;
+			cursor: pointer;
+ 			padding: 14px 16px;
+ 			transition: 0.3s;
+		}
+
+		.tab button:hover {
+  			background-color: LightGrey;
+		}
+
+		.tab button.active {
+  			background-color: Tomato;
+		}
+
+		.tabcontent {
+  			display: none;
+  			padding: 6px 12px;
+  			border: 1px solid #ccc;
+  			border-top: none;
+		}
+	</style>
+	
 	<head>
-		<link id="pagestyle" rel="stylesheet" type="text/css" href="account.css">
+		<link id="pagestyle" rel="stylesheet" type="text/css" href="styles.css">
 		
 
 	</head>
@@ -18,9 +51,55 @@
 	
 	<body>
 		<h1> TinderEats </h1>
-		
+		<h2> My Account </h2>
+
+		<div class="tab">
+			<button class="tablinks" onclick="openTab(event, 'editInfo')">Edit Info</button>
+			<button class="tablinks" onclick="openTab(event, 'points')">Points</button>
+			<button class="tablinks" onclick="openTab(event, 'pastOrders')">Past Orders</button>
+		</div>
+
+		<div id="editInfo" class="tabcontent">
+			<h3>Edit Info</h3>
+			<h4>Name</h4>
+			<h4>Number</h4>
+			<h4>Address</h4>
+			<h4>E-mail</h4>
+			<h4>Password</h4>
+		</div>
+
+		<div id="points" class="tabcontent">
+			<h3>Points</h3>
+			<h4>Points Total: 10</h4>
+			<h4>Balance History</h4>
+		</div>
+
+		<div id="pastOrders" class="tabcontent">
+			<h3>Past Orders</h3>
+			<h4>Order 1</h4>
+			<h4>Order 2</h4>
+		</div>
 		
 		<p><a href="#SUPPORT"> Support </p>
+			
+		<script>
+			function openTab(evt, tabName) {
+  			var i, tabcontent, tablinks;
+
+  			tabcontent = document.getElementsByClassName("tabcontent");
+  			for (i = 0; i < tabcontent.length; i++) {
+   			  tabcontent[i].style.display = "none";
+  			}
+
+  			tablinks = document.getElementsByClassName("tablinks");
+  			for (i = 0; i < tablinks.length; i++) {
+    			   tablinks[i].className = tablinks[i].className.replace(" active", "");
+  			}
+
+  			document.getElementById(tabName).style.display = "block";
+  			evt.currentTarget.className += " active";
+			}
+		</script>
 	</body>
 	<script type="text/javascript" src="scripttest.js"></script>
 </html>

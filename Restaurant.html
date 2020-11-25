@@ -1,27 +1,354 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<link id="pagestyle" rel="stylesheet" type="text/css" href="restaurant.css">
-		
+<html lang="en">
 
-	</head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
 
-	
-	<nav>
-		<ul>
-		  <li><a href="swipe.html">Swipe</a></li>
-		  <li><a class="active">Matches</a></li>
-		  <li><a href="#SURPRISE">Surprise Me!</a></li>
-		  <li><a href="#ACCOUNT">Account</a></li>
-		</ul>
-	</nav>
-	
-	<body>
-		<h1> TinderEats </h1>
-		
-		
-		<p><a href="#SUPPORT"> Support </p>
-	</body>
-	<script type="text/javascript" src="scripttest.js"></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap-4.5.3-dist/bootstrap-4.5.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="Restaurant.css">
+</head>
+
+<body>
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: tomato;">
+        <a class="navbar-brand" href="#">TinderEats</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#">Swipe <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="Matches.html">Matches</a>
+                <a class="nav-item nav-link" href="Surprise.html">Surprise Me</a>
+                <a class="nav-item nav-link disabled" href="Account.html">Account</a>
+            </div>
+
+        </div>
+    </nav>
+
+
+
+    <div class="restaurant-head">
+        <h1>Restaurant Name</h1>
+        <h3>3.4 km away</h2>
+    </div>
+
+
+    <div class="cart-container">
+        <div class="cart jumbotron">
+            <h1>Cart</h1>
+
+
+        </div>
+        <button class="checkout-button">
+        Check Out
+    </button>
+    </div>
+
+
+    <div class="container text-left my-3 category-bar">
+        <h2 class="font-weight-light">Category Name</h2>
+        <div class="row mx-auto my-auto">
+            <div id="cat1" class="carousel slide w-100" data-interval="false" data-ride="carousel">
+                <div class="carousel-inner w-100" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="col-md-3">
+                            <div class="card card-body">
+                                <a href="#ADDTOCART">
+                                    <h3>Item Name</h3>
+                                    <img class="img-fluid" src="Food/img1.jpg">
+                                    <h3>$1.23</h3>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <div class="card card-body">
+                                <h3>Item Name</h3>
+                                <img class="img-fluid" src="Food/img2.jpg">
+                                <h3>$1.23</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <div class="card card-body">
+                                <h3>Item Name</h3>
+                                <img class="img-fluid" src="Food/img3.jpg">
+                                <h3>$1.23</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <div class="card card-body">
+                                <h3>Item Name</h3>
+                                <img class="img-fluid" src="Food/img4.jpg">
+                                <h3>$1.23</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <div class="card card-body">
+                                <h3>Item Name</h3>
+                                <img class="img-fluid" src="Food/img5.jpg">
+                                <h3>$1.23</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <div class="card card-body">
+                                <h3>Item Name</h3>
+                                <img class="img-fluid" src="Food/img6.jpg">
+                                <h3>$1.23</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev w-auto" href="#cat1" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next w-auto" href="#cat1" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-left  my-3 category-bar">
+        <h2 class="font-weight-light">Category Name</h2>
+        <div class="row mx-auto my-auto">
+            <div id="cat2" class="carousel slide w-100" data-interval="false" data-ride="carousel">
+                <div class="carousel-inner w-100" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="col-md-3">
+                            <div class="card card-body">
+                                <h3>Item Name</h3>
+                                <img class="img-fluid" src="Food/img1.jpg">
+                                <h3>$1.23</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <div class="card card-body">
+                                <h3>Item Name</h3>
+                                <img class="img-fluid" src="Food/img2.jpg">
+                                <h3>$1.23</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <div class="card card-body">
+                                <h3>Item Name</h3>
+                                <img class="img-fluid" src="Food/img3.jpg">
+                                <h3>$1.23</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <div class="card card-body">
+                                <h3>Item Name</h3>
+                                <img class="img-fluid" src="Food/img4.jpg">
+                                <h3>$1.23</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <div class="card card-body">
+                                <h3>Item Name</h3>
+                                <img class="img-fluid" src="Food/img5.jpg">
+                                <h3>$1.23</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <div class="card card-body">
+                                <h3>Item Name</h3>
+                                <img class="img-fluid" src="Food/img6.jpg">
+                                <h3>$1.23</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev w-auto" href="#cat2" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next w-auto" href="#cat2" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-left  my-3 category-bar">
+        <h2 class="font-weight-light">Category Name</h2>
+        <div class="row mx-auto my-auto">
+            <div id="cat1" class="carousel slide w-100" data-interval="false" data-ride="carousel">
+                <div class="carousel-inner w-100" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="col-md-3">
+                            <div class="card card-body">
+                                <h3>Item Name</h3>
+                                <img class="img-fluid" src="Food/img1.jpg">
+                                <h3>$1.23</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <div class="card card-body">
+                                <h3>Item Name</h3>
+                                <img class="img-fluid" src="Food/img2.jpg">
+                                <h3>$1.23</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <div class="card card-body">
+                                <h3>Item Name</h3>
+                                <img class="img-fluid" src="Food/img3.jpg">
+                                <h3>$1.23</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <div class="card card-body">
+                                <h3>Item Name</h3>
+                                <img class="img-fluid" src="Food/img4.jpg">
+                                <h3>$1.23</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <div class="card card-body">
+                                <h3>Item Name</h3>
+                                <img class="img-fluid" src="Food/img5.jpg">
+                                <h3>$1.23</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <div class="card card-body">
+                                <h3>Item Name</h3>
+                                <img class="img-fluid" src="Food/img6.jpg">
+                                <h3>$1.23</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev w-auto" href="#cat1" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next w-auto" href="#cat1" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-left  my-3 category-bar">
+        <h2 class="font-weight-light">Category Name</h2>
+        <div class="row mx-auto my-auto">
+            <div id="cat1" class="carousel slide w-100" data-interval="false" data-ride="carousel">
+                <div class="carousel-inner w-100" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="col-md-3">
+                            <div class="card card-body">
+                                <h3>Item Name</h3>
+                                <img class="img-fluid" src="Food/img1.jpg">
+                                <h3>$1.23</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <div class="card card-body">
+                                <h3>Item Name</h3>
+                                <img class="img-fluid" src="Food/img2.jpg">
+                                <h3>$1.23</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <div class="card card-body">
+                                <h3>Item Name</h3>
+                                <img class="img-fluid" src="Food/img3.jpg">
+                                <h3>$1.23</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <div class="card card-body">
+                                <h3>Item Name</h3>
+                                <img class="img-fluid" src="Food/img4.jpg">
+                                <h3>$1.23</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <div class="card card-body">
+                                <h3>Item Name</h3>
+                                <img class="img-fluid" src="Food/img5.jpg">
+                                <h3>$1.23</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-3">
+                            <div class="card card-body">
+                                <h3>Item Name</h3>
+                                <img class="img-fluid" src="Food/img6.jpg">
+                                <h3>$1.23</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev w-auto" href="#cat1" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next w-auto" href="#cat1" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="bootstrap-4.5.3-dist/bootstrap-4.5.3-dist/js/bootstrap.js"></script>
+    <script src="Restaurant.js"></script>
+</body>
+
 </html>
-

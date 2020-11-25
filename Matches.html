@@ -1,109 +1,450 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="Matches.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+
+    <link rel="stylesheet" type="text/css" href="bootstrap-4.5.3-dist/bootstrap-4.5.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="Matches.css">
 </head>
 
-<nav>
-    <h1> TinderEats </h1>
-    <ul>
-        <li><a href="Swipe.html">Swipe</a></li>
-        <li><a class="active">Matches</a></li>
-        <li><a href="#SURPRISE">Surprise Me!</a></li>
-        <li><a href="#ACCOUNT">Account</a></li>
-    </ul>
-</nav>
-
 <body>
-    <div class="RestaurantEntry">
-        <a href="Restaurant.html">
-            <button class="button">
-                <h1> Restaurant </h1>
-                <p> 3.5 km away</p>
-                <p> ★★★★☆</p>
-                <p> $$ </p>
-            </button>
-        </a>
-        <div class="scrolling-list">
-            <img class="item-image" src="item.png"> </img>
-            <img class="item-image" src="item.png"> </img>
-            <img class="item-image" src="item.png"> </img>
-            <img class="item-image" src="item.png"> </img>
-            <img class="item-image" src="item.png"> </img>
-            <img class="item-image" src="item.png"> </img>
-            <img class="item-image" src="item.png"> </img>
-            <img class="item-image" src="item.png"> </img>
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: tomato;">
+        <a class="navbar-brand" href="#">TinderEats</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#">Swipe <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="Matches.html">Matches</a>
+                <a class="nav-item nav-link" href="Surprise.html">Surprise Me</a>
+                <a class="nav-item nav-link disabled" href="Account.html">Account</a>
+            </div>
+
+        </div>
+    </nav>
+
+
+
+    <div class="container col-md-11 my-3 mx-3">
+        <h1>Matches</h1>
+        <h4>Here's what we think you'd like</h4>
+    </div>
+
+    <div class="container col-md-11 my-3 restaurant-entry">
+        <div>
+            <a class="container restaurant-head" href="Restaurant.html">
+                <div class="row">
+                    <div class="col-md4">
+                        <h2>Restaurant Name</h2>
+                    </div>
+                    <div class="col-md-1">
+                        <h4> 5.6 km away</h4>
+                    </div>
+                    <div class="dol-md-7">
+                        <h4> ★★★★☆</h4>
+
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+            </a>
+        </div>
+        <div class="row mx-auto my-auto">
+            <div id="cat1" class="carousel slide w-100" data-interval="false" data-ride="carousel">
+                <div class="carousel-inner w-100" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="col-md-2">
+                            <div class="card card-body">
+                                <a href="Restaurant.html">
+                                    <img class="img-fluid" src="Food/img1.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-2">
+                            <div class="card card-body">
+                                <a href="Restaurant.html">
+                                    <img class="img-fluid" src="Food/img2.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-2">
+                            <div class="card card-body">
+                                <a href="Restaurant.html">
+                                    <img class="img-fluid" src="Food/img3.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-2">
+                            <div class="card card-body">
+                                <a href="Restaurant.html">
+                                    <img class="img-fluid" src="Food/img4.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-2">
+                            <div class="card card-body">
+                                <a href="Restaurant.html">
+                                    <img class="img-fluid" src="Food/img5.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-2">
+                            <div class="card card-body">
+                                <a href="Restaurant.html">
+                                    <img class="img-fluid" src="Food/img6.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
 
-    <div class="RestaurantEntry">
-        <a href="Restaurant.html">
-            <button class="button">
-                <h1> Restaurant </h1>
-                <p> 3.5 km away</p>
-                <p> ★★★★☆</p>
-                <p> $$ </p>
-            </button>
-        </a>
-        <div class="scrolling-list">
-            <img class="item-image" src="item.png"> </img>
-            <img class="item-image" src="item.png"> </img>
-            <img class="item-image" src="item.png"> </img>
-            <img class="item-image" src="item.png"> </img>
-            <img class="item-image" src="item.png"> </img>
-            <img class="item-image" src="item.png"> </img>
-            <img class="item-image" src="item.png"> </img>
-            <img class="item-image" src="item.png"> </img>
+    <div class="container col-md-11 my-3 restaurant-entry">
+        <div>
+            <a class="container restaurant-head" href="Restaurant.html">
+                <div class="row">
+                    <div class="col-md4">
+                        <h2>Restaurant Name</h2>
+                    </div>
+                    <div class="col-md-1">
+                        <h4> 5.6 km away</h4>
+                    </div>
+                    <div class="dol-md-7">
+                        <h4> ★★★★☆</h4>
+
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+            </a>
+        </div>
+        <div class="row mx-auto my-auto">
+            <div id="cat1" class="carousel slide w-100" data-interval="false" data-ride="carousel">
+                <div class="carousel-inner w-100" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="col-md-2">
+                            <div class="card card-body">
+                                <a href="Restaurant.html">
+                                    <img class="img-fluid" src="Food/img1.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-2">
+                            <div class="card card-body">
+                                <a href="Restaurant.html">
+                                    <img class="img-fluid" src="Food/img2.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-2">
+                            <div class="card card-body">
+                                <a href="Restaurant.html">
+                                    <img class="img-fluid" src="Food/img3.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-2">
+                            <div class="card card-body">
+                                <a href="Restaurant.html">
+                                    <img class="img-fluid" src="Food/img4.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-2">
+                            <div class="card card-body">
+                                <a href="Restaurant.html">
+                                    <img class="img-fluid" src="Food/img5.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-2">
+                            <div class="card card-body">
+                                <a href="Restaurant.html">
+                                    <img class="img-fluid" src="Food/img6.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
 
-    <div class="RestaurantEntry">
-        <a href="Restaurant.html">
-            <button class="button">
-                <h1> Restaurant </h1>
-                <p> 3.5 km away</p>
-                <p> ★★★★☆</p>
-                <p> $$ </p>
-            </button>
-        </a>
-        <div class="scrolling-list">
-            <img class="item-image" src="item.png"> </img>
-            <img class="item-image" src="item.png"> </img>
-            <img class="item-image" src="item.png"> </img>
-            <img class="item-image" src="item.png"> </img>
-            <img class="item-image" src="item.png"> </img>
-            <img class="item-image" src="item.png"> </img>
-            <img class="item-image" src="item.png"> </img>
-            <img class="item-image" src="item.png"> </img>
+    <div class="container col-md-11 my-3 restaurant-entry">
+        <div>
+            <a class="container restaurant-head" href="Restaurant.html">
+                <div class="row">
+                    <div class="col-md4">
+                        <h2>Restaurant Name</h2>
+                    </div>
+                    <div class="col-md-1">
+                        <h4> 5.6 km away</h4>
+                    </div>
+                    <div class="dol-md-7">
+                        <h4> ★★★★☆</h4>
+
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+            </a>
+        </div>
+        <div class="row mx-auto my-auto">
+            <div id="cat1" class="carousel slide w-100" data-interval="false" data-ride="carousel">
+                <div class="carousel-inner w-100" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="col-md-2">
+                            <div class="card card-body">
+                                <a href="Restaurant.html">
+                                    <img class="img-fluid" src="Food/img1.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-2">
+                            <div class="card card-body">
+                                <a href="Restaurant.html">
+                                    <img class="img-fluid" src="Food/img2.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-2">
+                            <div class="card card-body">
+                                <a href="Restaurant.html">
+                                    <img class="img-fluid" src="Food/img3.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-2">
+                            <div class="card card-body">
+                                <a href="Restaurant.html">
+                                    <img class="img-fluid" src="Food/img4.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-2">
+                            <div class="card card-body">
+                                <a href="Restaurant.html">
+                                    <img class="img-fluid" src="Food/img5.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-2">
+                            <div class="card card-body">
+                                <a href="Restaurant.html">
+                                    <img class="img-fluid" src="Food/img6.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
 
-    <div class="RestaurantEntry">
-        <a href="Restaurant.html">
-            <button class="button">
-                <h1> Restaurant </h1>
-                <p> 3.5 km away</p>
-                <p> ★★★★☆</p>
-                <p> $$ </p>
-            </button>
-        </a>
-        <div class="scrolling-list">
-            <img class="item-image" src="item.png"> </img>
-            <img class="item-image" src="item.png"> </img>
-            <img class="item-image" src="item.png"> </img>
-            <img class="item-image" src="item.png"> </img>
-            <img class="item-image" src="item.png"> </img>
-            <img class="item-image" src="item.png"> </img>
-            <img class="item-image" src="item.png"> </img>
-            <img class="item-image" src="item.png"> </img>
+    <div class="container col-md-11 my-3 restaurant-entry">
+        <div>
+            <a class="container restaurant-head" href="Restaurant.html">
+                <div class="row">
+                    <div class="col-md4">
+                        <h2>Restaurant Name</h2>
+                    </div>
+                    <div class="col-md-1">
+                        <h4> 5.6 km away</h4>
+                    </div>
+                    <div class="dol-md-7">
+                        <h4> ★★★★☆</h4>
+
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+            </a>
+        </div>
+        <div class="row mx-auto my-auto">
+            <div id="cat1" class="carousel slide w-100" data-interval="false" data-ride="carousel">
+                <div class="carousel-inner w-100" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="col-md-2">
+                            <div class="card card-body">
+                                <a href="Restaurant.html">
+                                    <img class="img-fluid" src="Food/img1.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-2">
+                            <div class="card card-body">
+                                <a href="Restaurant.html">
+                                    <img class="img-fluid" src="Food/img2.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-2">
+                            <div class="card card-body">
+                                <a href="Restaurant.html">
+                                    <img class="img-fluid" src="Food/img3.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-2">
+                            <div class="card card-body">
+                                <a href="Restaurant.html">
+                                    <img class="img-fluid" src="Food/img4.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-2">
+                            <div class="card card-body">
+                                <a href="Restaurant.html">
+                                    <img class="img-fluid" src="Food/img5.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-2">
+                            <div class="card card-body">
+                                <a href="Restaurant.html">
+                                    <img class="img-fluid" src="Food/img6.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
 
+    <div class="container col-md-11 my-3 restaurant-entry">
+        <div>
+            <a class="container restaurant-head" href="Restaurant.html">
+                <div class="row">
+                    <div class="col-md4">
+                        <h2>Restaurant Name</h2>
+                    </div>
+                    <div class="col-md-1">
+                        <h4> 5.6 km away</h4>
+                    </div>
+                    <div class="dol-md-7">
+                        <h4> ★★★★☆</h4>
 
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+            </a>
+        </div>
+        <div class="row mx-auto my-auto">
+            <div id="cat1" class="carousel slide w-100" data-interval="false" data-ride="carousel">
+                <div class="carousel-inner w-100" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="col-md-2">
+                            <div class="card card-body">
+                                <a href="Restaurant.html">
+                                    <img class="img-fluid" src="Food/img1.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-2">
+                            <div class="card card-body">
+                                <a href="Restaurant.html">
+                                    <img class="img-fluid" src="Food/img2.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-2">
+                            <div class="card card-body">
+                                <a href="Restaurant.html">
+                                    <img class="img-fluid" src="Food/img3.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-2">
+                            <div class="card card-body">
+                                <a href="Restaurant.html">
+                                    <img class="img-fluid" src="Food/img4.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-2">
+                            <div class="card card-body">
+                                <a href="Restaurant.html">
+                                    <img class="img-fluid" src="Food/img5.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-2">
+                            <div class="card card-body">
+                                <a href="Restaurant.html">
+                                    <img class="img-fluid" src="Food/img6.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="bootstrap-4.5.3-dist/bootstrap-4.5.3-dist/js/bootstrap.js"></script>
+    <script src="Restaurant.js"></script>
 </body>
-<script type="text/javascript" src="scripttest.js"></script>
 
 </html>

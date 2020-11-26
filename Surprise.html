@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width = device-width, initial-scale = 1">
 
-<link rel="stylesheet" type="text/css" href="bootstrap-4.5.3-dist/bootstrap-4.5.3-dist/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="swipe.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap-4.5.3-dist/bootstrap-4.5.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="swipe.css">
+    <link rel="stylesheet" type="text/css" href="Surprise.css">
 </head>
+
 <body>
 
 
@@ -17,74 +20,87 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link" href="index.html">Swipe</a>
-            <a class="nav-item nav-link" href="Matches.html">Matches</a>
-            <a class="nav-item nav-link active" href="#">Surprise Me<span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="Account.html">Account</a>
-          </div>
-          
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="index.html">Swipe</a>
+                <a class="nav-item nav-link" href="Matches.html">Matches</a>
+                <a class="nav-item nav-link active" href="#">Surprise Me<span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="Account.html">Account</a>
+            </div>
+
         </div>
-      </nav>
+    </nav>
 
-<div class="row">
-    <div class="col col-md-6 col-lg-6">
-        <div class="jumbotron">
-            <h1 class="lead">Let us know who we're cooking for</h1>
-            <hr class="my-4">
-            <form>
-                <label for="numPeople">Number of People</label>
-                <input type="range" class="custom-range" min="1" max="20" step="1" value="2" id="numPeople">
-            </form>
-            <div id="curPeople"><b></b> People </div>
-            <form>
-                <label for="budget">What's your Budget?</label>
-                <input type="range" class="custom-range" min="20" max="500" step="1" value="50" id="budget">
-            </form>
-            <div id="budgetVal">Budget: $<b></b></div>
+    <div class="row">
+        <div class="col col-md-6 col-lg-6">
+            <div class="jumbotron" style="margin:30px;">
+                <h1>Let us know who we're cooking for</h1>
+                <hr class="my-4">
+                <form>
+                    <label for="numPeople">Number of People</label>
+                    <input type="range" class="custom-range" min="1" max="20" step="1" value="2" id="numPeople">
+                </form>
+                <div id="curPeople"><b></b> People </div>
+                <form style="margin-top:10px;">
+                    <label for="budget">What's your Budget?</label>
+                    <input type="range" class="custom-range" min="20" max="500" step="1" value="50" id="budget">
+                </form>
+                <div id="budgetVal">Budget: $<b></b></div>
+
+                <form style="margin-top: 20px;">
+                    <input type="checkbox" id="addon1" name="addon1" value="1">
+                    <label for="addon1"> Vegan</label><br>
+                    <input type="checkbox" id="addon2" name="addon2" value="2">
+                    <label for="addon2"> Low Calorie</label><br>
+                    <input type="checkbox" id="addon3" name="addon3" value="3">
+                    <label for="addon3"> Option 3</label><br>
+                    <input type="checkbox" id="addon4" name="addon4" value="4">
+                    <label for="addon4"> Option 4</label><br>
 
 
-            <a class="btn btn-default" href="Checkout.html">Surprise Me!</a>
-            
+                </form>
+
+
+                <a class="btn btn-default" style="margin-top: 10px;" href="Checkout.html">Surprise Me!</a>
+
+            </div>
         </div>
+        <div class="col col-md-6 col-lg-6">
+            <div class="jumbotron" style="margin:30px;">
+                <h1>What is this?</h1>
+                <h3>Not really sure what you want? Want to try something new? Give us some information about your order, and we will choose what to get for you. It's as easy as 1, 2, 3! </h3>
+            </div>
+        </div>
+
+
+
+
+
+
     </div>
-    <div class="col col-md-6 col-lg-6">
-        <div class="jumbotron">
-            <h1 class="lead">It's as easy as 1, 2, 3!</h1>
-        </div>
-    </div>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="bootstrap-4.5.3-dist/bootstrap-4.5.3-dist/js/bootstrap.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Read value on page load
+            $("#curPeople b").html($("#numPeople").val());
 
-
-
-
-
-</div>
-
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="bootstrap-4.5.3-dist/bootstrap-4.5.3-dist/js/bootstrap.js"></script>
-<script>
-    
-
-    $(document).ready(function(){
-        // Read value on page load
-        $("#curPeople b").html($("#numPeople").val());
-
-        // Read value on change
-        $("#numPeople").change(function(){
-            $("#curPeople b").html($(this).val());
+            // Read value on change
+            $("#numPeople").change(function() {
+                $("#curPeople b").html($(this).val());
+            });
         });
-    });  
-    $(document).ready(function(){
-        // Read value on page load
-        $("#budgetVal b").html($("#budget").val());
+        $(document).ready(function() {
+            // Read value on page load
+            $("#budgetVal b").html($("#budget").val());
 
-        // Read value on change
-        $("#budget").change(function(){
-            $("#budgetVal b").html($(this).val());
+            // Read value on change
+            $("#budget").change(function() {
+                $("#budgetVal b").html($(this).val());
+            });
         });
-    });       
-</script> 
+    </script>
 </body>
+
 </html>

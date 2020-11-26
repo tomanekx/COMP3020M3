@@ -11,21 +11,141 @@
 
 
 
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: tomato;">
-        <a class="navbar-brand" href="#">TinderEats</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link" href="index.html">Swipe</a>
-            <a class="nav-item nav-link" href="Matches.html">Matches</a>
-            <a class="nav-item nav-link" href="Surprise.html">Surprise Me</a>
-            <a class="nav-item nav-link active" href="#">Account <span class="sr-only">(current)</span></a>
-          </div>
+        <!-- Nav Bar -->
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: tomato;">
+            <a class="navbar-brand" href="#">TinderEats</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Swipe</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Matches.html">Matches</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Surprise.html">Surprise Me</a>
+                  </li>
+                  <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="NavDrop" role="button" 
+                    data-toggle="dropdown">Account</a>
+                    <div class="dropdown-menu">
+                      <a id="signNav" class="dropdown-item" data-toggle="modal" data-target="#signUp" href="#signUp">Sign Up</a>
+                      <a id="logNav" class="dropdown-item" data-toggle="modal" data-target="#logIn"href="#logIn">Log In</a>
+                      <div class="dropdown-divider"></div>
+                      <a id="accNav" class="dropdown-item disabled" href="Account.html">View Account</a>
+                      <a id="outNav" class="dropdown-item disabled" href="#logOut">Log Out</a>
+                    </div>
+                  </li>
+                    
+                </ul>
+    
+            </div>
+        </nav>
+        <!-- Modal -->
+        <div id="signUp" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+    
+              <!-- Modal content-->
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h4 class="modal-title">Just Let us Know Who You Are!</h4>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  </div>
+                  <div class="modal-body">
+    
+                    <div class="form-group">
+                      <label for="firstName">First Name</label>
+                      <input type="name" class="form-control" id="firstName"  placeholder="Your Name">
           
+                  </div>
+                  <div class="form-group">
+                      <label for="lastName">Last Name</label>
+                      <input type="name" class="form-control" id="LastName"  placeholder="Your Name">
+                      
+                  </div>
+                  <div class="form-group">
+                      <label for="number">Phone Number</label>
+                      <input type="number" class="form-control" id="phone"  placeholder="(123)-456-7890">
+                      
+                  </div>
+                  <div class="form-group">
+                      <label for="email">Email Address</label>
+                      <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="jondoe@gmail.com">
+                      
+                  </div>
+                  <div class="form-group">
+                      <label for="password">Password</label>
+                      <input type="password" class="form-control" id="password"  placeholder="*******">
+                      
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Confirm Password</label>
+                    <input type="password" class="form-control" id="password"  placeholder="*******">
+                    
+                </div>
+    
+                  </div>
+                  <div class="modal-footer">
+                      <button id="signup" data-dismiss="modal" type="button" class="btn btn-default" 
+                       >Sign Up Now</button>
+    
+                       <button data-dismiss="modal" type="button" class="float-left btn btn-default" 
+                       data-toggle="modal" data-target="#logIn">or Log In</button>
+    
+                       <!-- <div class="col-sm-4">
+                          <button type="button" class="btn "><i ></i> Add New</button>
+                      </div> -->
+                  </div>
+              </div>
+    
+          </div>
+      </div>
+      <!-- Modal -->
+      <div id="logIn" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+    
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Welcome Back!</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+    
+                  
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="jondoe@gmail.com">
+                    
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password"  placeholder="*******">
+                    
+                </div>
+                
+    
+                </div>
+                <div class="modal-footer">
+                    <button id="login" data-dismiss="modal" type="button" class="btn btn-default" 
+                     >Log In</button>
+    
+                     <button data-dismiss="modal" type="button" class="float-left btn btn-default" 
+                     data-toggle="modal" data-target="#signUp">or Sign Up</button>
+    
+                     <!-- <div class="col-sm-4">
+                        <button type="button" class="btn "><i ></i> Add New</button>
+                    </div> -->
+                </div>
+            </div>
+    
         </div>
-      </nav>
+    </div>
+        <!-- End Nav Bar -->
 
 <h1>My Account</h1>
 <div class="container">
@@ -122,6 +242,7 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="bootstrap-4.5.3-dist/bootstrap-4.5.3-dist/js/bootstrap.js"></script>
+<script src="index.js"></script>
 <script>
 
 $(document).ready(function(){

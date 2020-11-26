@@ -66,7 +66,7 @@ $(document).ready(function(){
 			'<td>' + actions + '</td>' +
         '</tr>';
     	$("table").append(row);		
-		$("table tbody tr").eq(index + 1).find(".add, .edit").toggle();
+		$("table tbody tr").eq(index + 1);//.find(".add, .edit").toggle();
         $('[data-toggle="tooltip"]').tooltip();
     });
 	// Add row on add button click

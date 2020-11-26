@@ -17,10 +17,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="#">Swipe <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="index.html">Swipes</a>
                 <a class="nav-item nav-link" href="Matches.html">Matches</a>
                 <a class="nav-item nav-link" href="Surprise.html">Surprise Me</a>
-                <a class="nav-item nav-link disabled" href="Account.html">Account</a>
+                <a class="nav-item nav-link" href="Account.html">Account</a>
             </div>
 
         </div>
@@ -35,14 +35,41 @@
 
 
     <div class="cart-container">
-        <div class="cart jumbotron">
-            <h1>Cart</h1>
-
-
-        </div>
-        <button class="checkout-button">
-            Check Out
-        </button>
+        <div class="container-lg">
+            <div class="table-responsive">
+                <div class="table-wrapper">
+                    <div class="table-title">
+                        <div class="row">
+                            <div class="col-sm-8"><h2>Your Order<b></b></h2></div>
+                            
+                        </div>
+                    </div>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Item Name</th>
+                                <th>Amount</th>
+                                <th>Price</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Cuttlery</td>
+                                <td>1</td>
+                                <td>$0</td>
+                                <td>
+                                    <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                                    <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                                    <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                                </td>
+                            </tr>
+                             
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>    
     </div>
 
 
@@ -345,22 +372,23 @@
 
                     <form>
                         <p>This is a description of the food. It has this, this and this.</p>
-                        <input type="radio" id="option1" name="options" value="1">
-                        <label for="option1">Option 1</label><br>
-                        <input type="radio" id="option2" name="options" value="2">
-                        <label for="option2">Option 2</label><br>
-                        <input type="radio" id="option3" name="options" value="3">
-                        <label for="option3">Option 3</label><br><br>
+                        <div id="option">
+                        <input type="radio" id="option1" class="active" name="options" value="0">
+                        <label for="option1">Option 1 - Free</label><br>
+                        <input type="radio" id="option2" name="options" value="5">
+                        <label for="option2">Option 2  + $5.00</label><br>
+                        <input type="radio" id="option3" name="options" value="5">
+                        <label for="option3">Option 3  + $5.00</label><br><br>
+                        </div>
 
 
-
-                        <input type="checkbox" id="addon1" name="addon1" value="Add-on 1">
+                        <input type="checkbox" id="addon1" name="addon1" value="1">
                         <label for="addon1"> Add-on 1</label><br>
-                        <input type="checkbox" id="addon2" name="addon2" value="Add-on 2">
+                        <input type="checkbox" id="addon2" name="addon2" value="2">
                         <label for="addon2"> Add-on 2</label><br>
-                        <input type="checkbox" id="addon3" name="addon3" value="Add-on 3">
+                        <input type="checkbox" id="addon3" name="addon3" value="3">
                         <label for="addon3"> Add-on 3</label><br>
-                        <input type="checkbox" id="addon4" name="addon4" value="Add-on 4">
+                        <input type="checkbox" id="addon4" name="addon4" value="4">
                         <label for="addon4"> Add-on 4</label><br>
 
                         <label for="other">Other instructions</label>
@@ -370,7 +398,12 @@
 
                 </div>
                 <div class="modal-footer">
-                    <button type="button2" class="btn btn-default button2" data-dismiss="modal">Add to cart</button>
+                    <button data-dismiss="modal" type="button" class="btn btn-default button btn-info add-new" class="fa fa-plus" id="addCart"
+                     >Add to cart: $<b></b></button>
+
+                     <!-- <div class="col-sm-4">
+                        <button type="button" class="btn "><i ></i> Add New</button>
+                    </div> -->
                 </div>
             </div>
 

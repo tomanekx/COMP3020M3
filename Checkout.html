@@ -7,6 +7,7 @@
 <link rel="stylesheet" type="text/css" href="bootstrap-4.5.3-dist/bootstrap-4.5.3-dist/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="swipe.css">
 <link rel="stylesheet" type="text/css" href="Checkout.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
 <style>
     .container {
@@ -155,11 +156,56 @@
         </div>
 
     </div>
-</div>
+    </div>
     <!-- End Nav Bar -->
 
 
+    <!-- Log in Prompt -->
+    <!-- Modal -->
+  <div id="logPromp" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">One Last Thing!</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+
+            
+
+        
+            
+                <button id="login" data-dismiss="modal" data-target="#logIn" 
+                type="button" data-toggle="modal" class="btn btn-default" 
+                 >Log In</button>
+
+                 <button data-dismiss="modal" type="button" class="btn btn-default" 
+                 data-toggle="modal" data-target="#signUp">Sign Up</button>
+
+                 <div class="divider"></div>
+
+                 <button data-dismiss="modal" type="button" class="btn btn-default" 
+                 >or Continue as Guest</button>
+
+                 
+
+                 
+            
+        </div>
+
+    </div>
+    </div>
+</div>
+
+    
+
+
+
         <div class="row">
+
+            <a class="btn btn-default" href="Restaurant.html">Keep Shopping</a>
 
             <div class="col test card text-right">
     
@@ -233,71 +279,12 @@
                                                 <td>1</td>
                                                 <td>$0</td>
                                                 <td>
-                                                    <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
-                                                    <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
-                                                    <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                                                    
+                                                    <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">clear</i></a>
                                                 </td>
                                             </tr>
-                                            <tr>
-                                                <td>Food Item</td>
-                                                <td>2</td>
-                                                <td>$8.54</td>
-                                                <td>
-                                                    <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
-                                                    <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
-                                                    <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Food Item (large} </td>
-                                                <td>1</td>
-                                                <td>$7</td>
-                                                <td>
-                                                    <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
-                                                    <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
-                                                    <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Small things</td>
-                                                <td>3</td>
-                                                <td>$6.54</td>
-                                                <td>
-                                                    <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
-                                                    <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
-                                                    <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Cutlery</td>
-                                                <td>1</td>
-                                                <td>$0</td>
-                                                <td>
-                                                    <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
-                                                    <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
-                                                    <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Cutlery</td>
-                                                <td>1</td>
-                                                <td>$0</td>
-                                                <td>
-                                                    <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
-                                                    <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
-                                                    <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>Cutlery</td>
-                                                <td>1</td>
-                                                <td>$0</td>
-                                                <td>
-                                                    <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
-                                                    <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
-                                                    <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
-                                                </td>
-                                            </tr>
+                                            
+                                            
     
                                         </tbody>
                                     </table>
@@ -306,7 +293,7 @@
                         </div>
                     </div>
                 </div>
-                <button type="button" class="btn btn-primary" data-toggle="modal" href="#thankyou">Check Out</button>
+                <button type="button" class="btn btn-default" data-toggle="modal" href="#thankyou">Check Out</button>
             </div>
     
     
@@ -355,5 +342,7 @@
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="bootstrap-4.5.3-dist/bootstrap-4.5.3-dist/js/bootstrap.js"></script>
 <script src="index.js"></script>
+<script src="Restaurant.js"></script>
+<script src="checkout.js"></script>
 </body>
 </html>

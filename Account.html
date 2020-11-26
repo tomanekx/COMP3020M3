@@ -31,12 +31,12 @@
 <div class="container">
 
     <p>
-        <button class="btn btn-default" type="button" data-toggle="collapse" data-target="#editInfo"
+        <button  class="btn btn-default" type="button" data-toggle="collapse" data-target="#editInfo"
         aria-expanded="false" aria-controls="editInfo">Edit Info</button>
         <button class="btn btn-default" type="button" data-toggle="collapse" data-target="#points"
-        aria-expanded="false" aria-controls="editInfo">Your Rewards Points</button>
+        aria-expanded="false" aria-controls="pointHistory">Your Rewards Points</button>
         <button class="btn btn-default" type="button" data-toggle="collapse" data-target="#pastOrders"
-        aria-expanded="false" aria-controls="editInfo">Past Orders</button>
+        aria-expanded="false" aria-controls="pastOrders">Past Orders</button>
     </p>
 
     <div class="collapse" id="editInfo">
@@ -122,6 +122,23 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="bootstrap-4.5.3-dist/bootstrap-4.5.3-dist/js/bootstrap.js"></script>
+<script>
+
+$(document).ready(function(){
+$("#editInfo").on("show.bs.collapse", function(){
+    $("#pastOrders").collapse('hide');
+    $("#points").collapse('hide');
+});
+$("#points").on("show.bs.collapse", function(){
+    $("#pastOrders").collapse('hide');
+    $("#editInfo").collapse('hide');
+});
+$("#pastOrders").on("show.bs.collapse", function(){
+    $("#editInfo").collapse('hide');
+    $("#points").collapse('hide');
+});
+});
+</script>
 
 
 </body>

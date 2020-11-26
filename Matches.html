@@ -6,7 +6,10 @@
     <meta name="viewport" content="width = device-width, initial-scale = 1">
 
     <link rel="stylesheet" type="text/css" href="bootstrap-4.5.3-dist/bootstrap-4.5.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="swipe.css">
     <link rel="stylesheet" type="text/css" href="Matches.css">
+
+    
 </head>
 
 <body>
@@ -14,7 +17,8 @@
 
 
         <!-- Nav Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: tomato;">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: tomato;">
+        <div class="container">
         <a class="navbar-brand" href="#">TinderEats</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -45,6 +49,7 @@
             </ul>
 
         </div>
+    </div>
     </nav>
     <!-- Modal -->
     <div id="signUp" class="modal fade" role="dialog">
@@ -150,7 +155,11 @@
     <!-- End Nav Bar -->
 
 
+    <p>
+        <a href="index.html" class="btn btn-default btn-lg float-left swipe-btn">
+          Keep Swiping</a>
 
+    </p>
     <div class="container col-md-11 my-3 mx-3">
         <h1>Matches</h1>
         <h4>Here's what we think you'd like</h4>

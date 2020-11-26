@@ -6,183 +6,168 @@
     <meta name="viewport" content="width = device-width, initial-scale = 1">
 
     <link rel="stylesheet" type="text/css" href="bootstrap-4.5.3-dist/bootstrap-4.5.3-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="swipe.css">
     <link rel="stylesheet" type="text/css" href="Matches.css">
-
-    
 </head>
 
 <body>
 
 
 
-        <!-- Nav Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: tomato;">
-        <div class="container">
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: tomato;">
         <a class="navbar-brand" href="#">TinderEats</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <ul class="navbar-nav mr-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Swipe</a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Matches<span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Surprise.html">Surprise Me</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="NavDrop" role="button" 
-                data-toggle="dropdown">Account</a>
-                <div class="dropdown-menu">
-                  <a id="signNav" class="dropdown-item" data-toggle="modal" data-target="#signUp" href="#signUp">Sign Up</a>
-                  <a id="logNav" class="dropdown-item" data-toggle="modal" data-target="#logIn"href="#logIn">Log In</a>
-                  <div class="dropdown-divider"></div>
-                  <a id="accNav" class="dropdown-item disabled" href="Account.html">View Account</a>
-                  <a id="outNav" class="dropdown-item disabled" href="#logOut">Log Out</a>
-                </div>
-              </li>
-                
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Swipe</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Matches<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Surprise.html">Surprise Me</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="NavDrop" role="button" data-toggle="dropdown">Account</a>
+                    <div class="dropdown-menu">
+                        <a id="signNav" class="dropdown-item" data-toggle="modal" data-target="#signUp" href="#signUp">Sign Up</a>
+                        <a id="logNav" class="dropdown-item" data-toggle="modal" data-target="#logIn" href="#logIn">Log In</a>
+                        <div class="dropdown-divider"></div>
+                        <a id="accNav" class="dropdown-item disabled" href="Account.html">View Account</a>
+                        <a id="outNav" class="dropdown-item disabled" href="#logOut">Log Out</a>
+                    </div>
+                </li>
+
             </ul>
 
         </div>
-    </div>
     </nav>
     <!-- Modal -->
     <div id="signUp" class="modal fade" role="dialog">
-      <div class="modal-dialog">
+        <div class="modal-dialog">
 
-          <!-- Modal content-->
-          <div class="modal-content">
-              <div class="modal-header">
-                  <h4 class="modal-title">Just Let us Know Who You Are!</h4>
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-              </div>
-              <div class="modal-body">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Just Let us Know Who You Are!</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
 
-                <div class="form-group">
-                  <label for="firstName">First Name</label>
-                  <input type="name" class="form-control" id="firstName"  placeholder="Your Name">
-      
-              </div>
-              <div class="form-group">
-                  <label for="lastName">Last Name</label>
-                  <input type="name" class="form-control" id="LastName"  placeholder="Your Name">
-                  
-              </div>
-              <div class="form-group">
-                  <label for="number">Phone Number</label>
-                  <input type="number" class="form-control" id="phone"  placeholder="(123)-456-7890">
-                  
-              </div>
-              <div class="form-group">
-                  <label for="email">Email Address</label>
-                  <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="jondoe@gmail.com">
-                  
-              </div>
-              <div class="form-group">
-                  <label for="password">Password</label>
-                  <input type="password" class="form-control" id="password"  placeholder="*******">
-                  
-              </div>
-              <div class="form-group">
-                <label for="password">Confirm Password</label>
-                <input type="password" class="form-control" id="password"  placeholder="*******">
-                
-            </div>
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="name" class="form-control" id="firstName" placeholder="Your Name">
 
-              </div>
-              <div class="modal-footer">
-                  <button id="signup" data-dismiss="modal" type="button" class="btn btn-default" 
-                   >Sign Up Now</button>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="name" class="form-control" id="LastName" placeholder="Your Name">
 
-                   <button data-dismiss="modal" type="button" class="float-left btn btn-default" 
-                   data-toggle="modal" data-target="#logIn">or Log In</button>
+                    </div>
+                    <div class="form-group">
+                        <label for="number">Phone Number</label>
+                        <input type="number" class="form-control" id="phone" placeholder="(123)-456-7890">
 
-                   <!-- <div class="col-sm-4">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="jondoe@gmail.com">
+
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="*******">
+
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Confirm Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="*******">
+
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button id="signup" data-dismiss="modal" type="button" class="btn btn-default">Sign Up Now</button>
+
+                    <button data-dismiss="modal" type="button" class="float-left btn btn-default" data-toggle="modal" data-target="#logIn">or Log In</button>
+
+                    <!-- <div class="col-sm-4">
                       <button type="button" class="btn "><i ></i> Add New</button>
                   </div> -->
-              </div>
-          </div>
-
-      </div>
-  </div>
-  <!-- Modal -->
-  <div id="logIn" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-
-        <!-- Modal content-->
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title">Welcome Back!</h4>
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
             </div>
-            <div class="modal-body">
 
-              
-            
-            <div class="form-group">
-                <label for="email">Email Address</label>
-                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="jondoe@gmail.com">
-                
-            </div>
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" class="form-control" id="password"  placeholder="*******">
-                
-            </div>
-            
+        </div>
+    </div>
+    <!-- Modal -->
+    <div id="logIn" class="modal fade" role="dialog">
+        <div class="modal-dialog">
 
-            </div>
-            <div class="modal-footer">
-                <button id="login" data-dismiss="modal" type="button" class="btn btn-default" 
-                 >Log In</button>
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Welcome Back!</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
 
-                 <button data-dismiss="modal" type="button" class="float-left btn btn-default" 
-                 data-toggle="modal" data-target="#signUp">or Sign Up</button>
 
-                 <!-- <div class="col-sm-4">
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="jondoe@gmail.com">
+
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="*******">
+
+                    </div>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button id="login" data-dismiss="modal" type="button" class="btn btn-default">Log In</button>
+
+                    <button data-dismiss="modal" type="button" class="float-left btn btn-default" data-toggle="modal" data-target="#signUp">or Sign Up</button>
+
+                    <!-- <div class="col-sm-4">
                     <button type="button" class="btn "><i ></i> Add New</button>
                 </div> -->
+                </div>
             </div>
-        </div>
 
+        </div>
     </div>
-</div>
     <!-- End Nav Bar -->
 
 
-    <p>
-        <a href="index.html" class="btn btn-default btn-lg float-left swipe-btn">
-          Keep Swiping</a>
 
-    </p>
     <div class="container col-md-11 my-3 mx-3">
         <h1>Matches</h1>
         <h4>Here's what we think you'd like</h4>
     </div>
 
     <div class="container col-md-11 my-3 restaurant-entry">
-        <div>
-            <a class="container restaurant-head" href="Restaurant.html">
-                <div class="row">
-                    <div class="col-md4">
-                        <h2>Restaurant Name</h2>
-                    </div>
-                    <div class="col-md-1">
-                        <h4> 5.6 km away</h4>
-                    </div>
-                    <div class="dol-md-7">
-                        <h4> ★★★★☆</h4>
-
-                    </div>
-                    <div class="col-md-2"></div>
+        <a class="container restaurant-head mx-3" href="Restaurant.html" style="color: black; text-decoration: none;">
+            <div class=" row card text-left mx-3">
+                <div class="col">
+                    <h2>Restaurant Name</h2>
                 </div>
-            </a>
-        </div>
+                <div class="col-1">
+                    <h4> 5.6 km</h4>
+                </div>
+                <div class="col-1">
+                    <h4> ★★★★☆</h4>
+                </div>
+
+                <div class="col-md-2"></div>
+            </div>
+        </a>
+
         <div class="row mx-auto my-auto">
             <div id="cat1" class="carousel slide w-100" data-interval="false" data-ride="carousel">
                 <div class="carousel-inner w-100" role="listbox">
@@ -247,23 +232,22 @@
     </div>
 
     <div class="container col-md-11 my-3 restaurant-entry">
-        <div>
-            <a class="container restaurant-head" href="Restaurant.html">
-                <div class="row">
-                    <div class="col-md4">
-                        <h2>Restaurant Name</h2>
-                    </div>
-                    <div class="col-md-1">
-                        <h4> 5.6 km away</h4>
-                    </div>
-                    <div class="dol-md-7">
-                        <h4> ★★★★☆</h4>
-
-                    </div>
-                    <div class="col-md-2"></div>
+        <a class="container restaurant-head mx-3" href="Restaurant.html" style="color: black; text-decoration: none;">
+            <div class=" row card text-left mx-3">
+                <div class="col">
+                    <h2>Restaurant Name</h2>
                 </div>
-            </a>
-        </div>
+                <div class="col-1">
+                    <h4> 5.6 km</h4>
+                </div>
+                <div class="col-1">
+                    <h4> ★★★★☆</h4>
+                </div>
+
+                <div class="col-md-2"></div>
+            </div>
+        </a>
+
         <div class="row mx-auto my-auto">
             <div id="cat1" class="carousel slide w-100" data-interval="false" data-ride="carousel">
                 <div class="carousel-inner w-100" role="listbox">
@@ -326,25 +310,23 @@
             </div>
         </div>
     </div>
-
     <div class="container col-md-11 my-3 restaurant-entry">
-        <div>
-            <a class="container restaurant-head" href="Restaurant.html">
-                <div class="row">
-                    <div class="col-md4">
-                        <h2>Restaurant Name</h2>
-                    </div>
-                    <div class="col-md-1">
-                        <h4> 5.6 km away</h4>
-                    </div>
-                    <div class="dol-md-7">
-                        <h4> ★★★★☆</h4>
-
-                    </div>
-                    <div class="col-md-2"></div>
+        <a class="container restaurant-head mx-3" href="Restaurant.html" style="color: black; text-decoration: none;">
+            <div class=" row card text-left mx-3">
+                <div class="col">
+                    <h2>Restaurant Name</h2>
                 </div>
-            </a>
-        </div>
+                <div class="col-1">
+                    <h4> 5.6 km</h4>
+                </div>
+                <div class="col-1">
+                    <h4> ★★★★☆</h4>
+                </div>
+
+                <div class="col-md-2"></div>
+            </div>
+        </a>
+
         <div class="row mx-auto my-auto">
             <div id="cat1" class="carousel slide w-100" data-interval="false" data-ride="carousel">
                 <div class="carousel-inner w-100" role="listbox">
@@ -407,25 +389,23 @@
             </div>
         </div>
     </div>
-
     <div class="container col-md-11 my-3 restaurant-entry">
-        <div>
-            <a class="container restaurant-head" href="Restaurant.html">
-                <div class="row">
-                    <div class="col-md4">
-                        <h2>Restaurant Name</h2>
-                    </div>
-                    <div class="col-md-1">
-                        <h4> 5.6 km away</h4>
-                    </div>
-                    <div class="dol-md-7">
-                        <h4> ★★★★☆</h4>
-
-                    </div>
-                    <div class="col-md-2"></div>
+        <a class="container restaurant-head mx-3" href="Restaurant.html" style="color: black; text-decoration: none;">
+            <div class=" row card text-left mx-3">
+                <div class="col">
+                    <h2>Restaurant Name</h2>
                 </div>
-            </a>
-        </div>
+                <div class="col-1">
+                    <h4> 5.6 km</h4>
+                </div>
+                <div class="col-1">
+                    <h4> ★★★★☆</h4>
+                </div>
+
+                <div class="col-md-2"></div>
+            </div>
+        </a>
+
         <div class="row mx-auto my-auto">
             <div id="cat1" class="carousel slide w-100" data-interval="false" data-ride="carousel">
                 <div class="carousel-inner w-100" role="listbox">
@@ -488,25 +468,23 @@
             </div>
         </div>
     </div>
-
     <div class="container col-md-11 my-3 restaurant-entry">
-        <div>
-            <a class="container restaurant-head" href="Restaurant.html">
-                <div class="row">
-                    <div class="col-md4">
-                        <h2>Restaurant Name</h2>
-                    </div>
-                    <div class="col-md-1">
-                        <h4> 5.6 km away</h4>
-                    </div>
-                    <div class="dol-md-7">
-                        <h4> ★★★★☆</h4>
-
-                    </div>
-                    <div class="col-md-2"></div>
+        <a class="container restaurant-head mx-3" href="Restaurant.html" style="color: black; text-decoration: none;">
+            <div class=" row card text-left mx-3">
+                <div class="col">
+                    <h2>Restaurant Name</h2>
                 </div>
-            </a>
-        </div>
+                <div class="col-1">
+                    <h4> 5.6 km</h4>
+                </div>
+                <div class="col-1">
+                    <h4> ★★★★☆</h4>
+                </div>
+
+                <div class="col-md-2"></div>
+            </div>
+        </a>
+
         <div class="row mx-auto my-auto">
             <div id="cat1" class="carousel slide w-100" data-interval="false" data-ride="carousel">
                 <div class="carousel-inner w-100" role="listbox">
@@ -569,6 +547,9 @@
             </div>
         </div>
     </div>
+
+
+
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

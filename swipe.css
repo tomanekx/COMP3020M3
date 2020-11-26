@@ -1,5 +1,5 @@
-.btn-floating-left{
-    position: relative;
+.btn-floating-left {
+    position: flex;
     width: 0;
     height: 0;
     border: 100% solid;
@@ -9,27 +9,25 @@
     border-left: 0px;
     background-color: transparent;
     float: left;
-    margin-left: 30%;
-    margin-top: 10%;
+    margin-top: 50%;
 }
 
 .btn-floating-left:hover {
     border-right: 50px solid Tomato
 }
 
-.btn-floating-right{
-        position: relative;
-        /* width: 0;
-        height: 0; */
-        border: 100% solid;
-        border-top: 50px solid transparent;
-        border-left: 50px solid DimGrey;
-        border-bottom: 50px solid transparent;
-        border-right: 0px;
-        background-color: transparent;
-        float: right;
-        /* margin-right: 30%;
-        margin-top: 10%; */
+.btn-floating-right {
+    position: flex;
+    width: 0;
+    height: 0;
+    border: 100% solid;
+    border-top: 50px solid transparent;
+    border-left: 50px solid DimGrey;
+    border-bottom: 50px solid transparent;
+    border-right: 0px;
+    background-color: transparent;
+    float: right;
+    margin-top: 50%;
 }
 
 .btn-floating-right:hover {
@@ -37,7 +35,13 @@
 }
 
 .btn-default {
-
     background-color: tomato;
+}
 
+.swipe-interface {
+    padding-top: 20px;
+}
+
+.matches-btn {
+    margin-right: 10%;
 }

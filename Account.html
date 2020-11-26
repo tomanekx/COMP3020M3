@@ -1,112 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width = device-width, initial-scale = 1">
 
-<link rel="stylesheet" type="text/css" href="bootstrap-4.5.3-dist/bootstrap-4.5.3-dist/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="swipe.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap-4.5.3-dist/bootstrap-4.5.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="swipe.css">
 </head>
+
 <body>
 
 
 
-        <!-- Nav Bar -->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: tomato;">
-            <a class="navbar-brand" href="#">TinderEats</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: tomato;">
+        <a class="navbar-brand" href="#">TinderEats</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <ul class="navbar-nav mr-auto">
-                  <li class="nav-item">
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
                     <a class="nav-link" href="index.html">Swipe</a>
-                  </li>
-                  <li class="nav-item">
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="Matches.html">Matches</a>
-                  </li>
-                  <li class="nav-item">
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="Surprise.html">Surprise Me</a>
-                  </li>
-                  <li class="nav-item dropdown active">
-                    <a class="nav-link dropdown-toggle" href="#" id="NavDrop" role="button" 
-                    data-toggle="dropdown">Account</a>
+                </li>
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="NavDrop" role="button" data-toggle="dropdown">Account</a>
                     <div class="dropdown-menu">
-                      <a id="signNav" class="dropdown-item" data-toggle="modal" data-target="#signUp" href="#signUp">Sign Up</a>
-                      <a id="logNav" class="dropdown-item" data-toggle="modal" data-target="#logIn"href="#logIn">Log In</a>
-                      <div class="dropdown-divider"></div>
-                      <a id="accNav" class="dropdown-item disabled" href="Account.html">View Account</a>
-                      <a id="outNav" class="dropdown-item disabled" href="#logOut">Log Out</a>
+                        <a id="signNav" class="dropdown-item" data-toggle="modal" data-target="#signUp" href="#signUp">Sign Up</a>
+                        <a id="logNav" class="dropdown-item" data-toggle="modal" data-target="#logIn" href="#logIn">Log In</a>
+                        <div class="dropdown-divider"></div>
+                        <a id="accNav" class="dropdown-item disabled" href="Account.html">View Account</a>
+                        <a id="outNav" class="dropdown-item disabled" href="#logOut">Log Out</a>
                     </div>
-                  </li>
-                    
-                </ul>
-    
-            </div>
-        </nav>
-        <!-- Modal -->
-        <div id="signUp" class="modal fade" role="dialog">
-          <div class="modal-dialog">
-    
-              <!-- Modal content-->
-              <div class="modal-content">
-                  <div class="modal-header">
-                      <h4 class="modal-title">Just Let us Know Who You Are!</h4>
-                      <button type="button" class="close" data-dismiss="modal">&times;</button>
-                  </div>
-                  <div class="modal-body">
-    
-                    <div class="form-group">
-                      <label for="firstName">First Name</label>
-                      <input type="name" class="form-control" id="firstName"  placeholder="Your Name">
-          
-                  </div>
-                  <div class="form-group">
-                      <label for="lastName">Last Name</label>
-                      <input type="name" class="form-control" id="LastName"  placeholder="Your Name">
-                      
-                  </div>
-                  <div class="form-group">
-                      <label for="number">Phone Number</label>
-                      <input type="number" class="form-control" id="phone"  placeholder="(123)-456-7890">
-                      
-                  </div>
-                  <div class="form-group">
-                      <label for="email">Email Address</label>
-                      <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="jondoe@gmail.com">
-                      
-                  </div>
-                  <div class="form-group">
-                      <label for="password">Password</label>
-                      <input type="password" class="form-control" id="password"  placeholder="*******">
-                      
-                  </div>
-                  <div class="form-group">
-                    <label for="password">Confirm Password</label>
-                    <input type="password" class="form-control" id="password"  placeholder="*******">
-                    
+                </li>
+
+            </ul>
+
+        </div>
+    </nav>
+    <!-- Modal -->
+    <div id="signUp" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Just Let us Know Who You Are!</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
-    
-                  </div>
-                  <div class="modal-footer">
-                      <button id="signup" data-dismiss="modal" type="button" class="btn btn-default" 
-                       >Sign Up Now</button>
-    
-                       <button data-dismiss="modal" type="button" class="float-left btn btn-default" 
-                       data-toggle="modal" data-target="#logIn">or Log In</button>
-    
-                       <!-- <div class="col-sm-4">
+                <div class="modal-body">
+
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="name" class="form-control" id="firstName" placeholder="Your Name">
+
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="name" class="form-control" id="LastName" placeholder="Your Name">
+
+                    </div>
+                    <div class="form-group">
+                        <label for="number">Phone Number</label>
+                        <input type="number" class="form-control" id="phone" placeholder="(123)-456-7890">
+
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="jondoe@gmail.com">
+
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="*******">
+
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Confirm Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="*******">
+
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button id="signup" data-dismiss="modal" type="button" class="btn btn-default">Sign Up Now</button>
+
+                    <button data-dismiss="modal" type="button" class="float-left btn btn-default" data-toggle="modal" data-target="#logIn">or Log In</button>
+
+                    <!-- <div class="col-sm-4">
                           <button type="button" class="btn "><i ></i> Add New</button>
                       </div> -->
-                  </div>
-              </div>
-    
-          </div>
-      </div>
-      <!-- Modal -->
-      <div id="logIn" class="modal fade" role="dialog">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Modal -->
+    <div id="logIn" class="modal fade" role="dialog">
         <div class="modal-dialog">
-    
+
             <!-- Modal content-->
             <div class="modal-content">
                 <div class="modal-header">
@@ -114,153 +113,201 @@
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
-    
-                  
-                
-                <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="jondoe@gmail.com">
-                    
-                </div>
-                <div class="form-group">
-                    <label for="password">Password</label>
-                    <input type="password" class="form-control" id="password"  placeholder="*******">
-                    
-                </div>
-                
-    
+
+
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="jondoe@gmail.com">
+
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="*******">
+
+                    </div>
+
+
                 </div>
                 <div class="modal-footer">
-                    <button id="login" data-dismiss="modal" type="button" class="btn btn-default" 
-                     >Log In</button>
-    
-                     <button data-dismiss="modal" type="button" class="float-left btn btn-default" 
-                     data-toggle="modal" data-target="#signUp">or Sign Up</button>
-    
-                     <!-- <div class="col-sm-4">
+                    <button id="login" data-dismiss="modal" type="button" class="btn btn-default">Log In</button>
+
+                    <button data-dismiss="modal" type="button" class="float-left btn btn-default" data-toggle="modal" data-target="#signUp">or Sign Up</button>
+
+                    <!-- <div class="col-sm-4">
                         <button type="button" class="btn "><i ></i> Add New</button>
                     </div> -->
                 </div>
             </div>
-    
+
         </div>
     </div>
-        <!-- End Nav Bar -->
+    <!-- End Nav Bar -->
 
-<h1>My Account</h1>
-<div class="container">
 
-    <p>
-        <button  class="btn btn-default" type="button" data-toggle="collapse" data-target="#editInfo"
-        aria-expanded="false" aria-controls="editInfo">Edit Info</button>
-        <button class="btn btn-default" type="button" data-toggle="collapse" data-target="#points"
-        aria-expanded="false" aria-controls="pointHistory">Your Rewards Points</button>
-        <button class="btn btn-default" type="button" data-toggle="collapse" data-target="#pastOrders"
-        aria-expanded="false" aria-controls="pastOrders">Past Orders</button>
-    </p>
-
-    <div class="collapse" id="editInfo">
-        <h2> Edit Info</h2>
-        <div class="form-group">
-            <label for="firstName">First Name</label>
-            <input type="name" class="form-control" id="firstName"  placeholder="Your Name">
-
-        </div>
-        <div class="form-group">
-            <label for="lastName">Last Name</label>
-            <input type="name" class="form-control" id="LastName"  placeholder="Your Name">
-            
-        </div>
-        <div class="form-group">
-            <label for="number">Phone Number</label>
-            <input type="number" class="form-control" id="phone"  placeholder="(123)-456-7890">
-            
-        </div>
-        <div class="form-group">
-            <label for="email">Email Address</label>
-            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="jondoe@gmail.com">
-            
-        </div>
-        <div class="form-group">
-            <label for="password">Password</label>
-            <input type="password" class="form-control" id="password"  placeholder="*******">
-            
-        </div>
-        <button class="btn btn-default" type="button" id="save">Save Changes</button>
-    </div>
-    <div class="collapse" id="points">
-        <h2>Reward Points</h2>
-        <h4>Current Points Balance = 25</h4>
-        <p>
-            <button class="btn btn-default" type="button" data-toggle="collapse" data-target="#pointHistory"
-        aria-expanded="false" aria-controls="editInfo">Points History</button>
+    <div class="container jumbotron mx-auto">
+        <h1 class="my-10;">My Account</h1>
+        <p class="my-10;">
+            <button class="btn btn-default" type="button" data-toggle="collapse" data-target="#editInfo" aria-expanded="false" aria-controls="editInfo">Edit Info</button>
+            <button class="btn btn-default" type="button" data-toggle="collapse" data-target="#points" aria-expanded="false" aria-controls="pointHistory">Your Rewards Points</button>
+            <button class="btn btn-default" type="button" data-toggle="collapse" data-target="#pastOrders" aria-expanded="false" aria-controls="pastOrders">Past Orders</button>
         </p>
-        <div class="collapse" id="pointHistory">
-            <table class="table table-striped table-dark">
-                <thead>
-                    <tr>
-                        <th scope="col">Date</th>
-                        <th scope="col">Point Change</th>
-                        <th scope="col">Reason</th>   
-                    </tr>
 
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row">Sep 20 2020</th>
-                        <td>-15</td>
-                        <td>Free Shipping!</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Sep 15 2020</th>
-                        <td>+20</td>
-                        <td>Purchase</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Sep 6 2020</th>
-                        <td>-10</td>
-                        <td>5 Dollars Off!</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Sep 20 2020</th>
-                        <td>+30</td>
-                        <td>New Account Bonus!</td>
-                    </tr>
-                </tbody>
-            </table>
+        <div class="collapse" id="editInfo">
+            <h2> Edit Info</h2>
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="name" class="form-control" id="firstName" placeholder="Your Name">
 
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="name" class="form-control" id="LastName" placeholder="Your Name">
+
+            </div>
+            <div class="form-group">
+                <label for="number">Phone Number</label>
+                <input type="number" class="form-control" id="phone" placeholder="(123)-456-7890">
+
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="jondoe@gmail.com">
+
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="*******">
+
+            </div>
+            <button class="btn btn-default" type="button" id="save">Save Changes</button>
         </div>
+        <div class="collapse" id="points">
+            <h3>Reward Points</h3>
+            <h5>Current Points Balance = 25</h5>
+            <p>
+                <button class="btn btn-default" type="button" data-toggle="collapse" data-target="#pointHistory" aria-expanded="false" aria-controls="editInfo">Points History</button>
+            </p>
+            <div class="collapse" id="pointHistory">
+                <table class="table table-striped table-dark">
+                    <thead>
+                        <tr>
+                            <th scope="col">Date</th>
+                            <th scope="col">Point Change</th>
+                            <th scope="col">Reason</th>
+                        </tr>
+
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Sep 20 2020</th>
+                            <td>-15</td>
+                            <td>Free Shipping!</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Sep 15 2020</th>
+                            <td>+20</td>
+                            <td>Purchase</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Sep 6 2020</th>
+                            <td>-10</td>
+                            <td>5 Dollars Off!</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Sep 20 2020</th>
+                            <td>+30</td>
+                            <td>New Account Bonus!</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+        <div class="collapse" id="pastOrders">
+            <h2> Order History</h2>
+            <div class="table-responsive my-10">
+                <div class="table-wrapper">
+
+                    <table class="table">
+                        <thead>
+                            <tr class="d-flex">
+                                <th class="col-3">Date</th>
+                                <th class="col-5">Description</th>
+                                <th class="col-2">Price</th>
+                                <th class="col-2">Buy again?</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="d-flex">
+                                <td class="col-3">November 13, 2020</td>
+                                <td class="col-5">
+                                    <p>• $5 - Item</p>
+                                    <p>• $5 - Item</p>
+                                    <p>• $5 - Item</p>
+                                </td>
+                                <td class="col-2">$0</td>
+                                <td class="col-2">
+                                    <a class=" btn btn-default" href="Checkout.html">Check out</a>
+                                </td>
+                            </tr>
+                            <tr class="d-flex">
+                                <td class="col-3">November 02, 2020</td>
+                                <td class="col-5">
+                                    <p>• $5 - Item</p>
+                                </td>
+                                <td class="col-2">$0</td>
+                                <td class="col-2">
+                                    <a class=" btn btn-default" href="Checkout.html">Check out</a>
+                                </td>
+                            </tr>
+                            <tr class="d-flex">
+                                <td class="col-3">October 28, 2020</td>
+                                <td class="col-5">
+                                    <p>• $5 - Item</p>
+                                    <p>• $5 - Item</p>
+                                    <p>• $5 - Item</p>
+                                    <p>• $5 - Item</p>
+                                </td>
+                                <td class="col-2">$0</td>
+                                <td class="col-2">
+                                    <a class=" btn btn-default" href="Checkout.html">Check out</a>
+                                </td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+
+
+
     </div>
-    <div class="collapse" id="pastOrders">
-        <h2> Order History</h2>
-    </div>
-
-      
-
-
-</div>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="bootstrap-4.5.3-dist/bootstrap-4.5.3-dist/js/bootstrap.js"></script>
-<script src="index.js"></script>
-<script>
-
-$(document).ready(function(){
-$("#editInfo").on("show.bs.collapse", function(){
-    $("#pastOrders").collapse('hide');
-    $("#points").collapse('hide');
-});
-$("#points").on("show.bs.collapse", function(){
-    $("#pastOrders").collapse('hide');
-    $("#editInfo").collapse('hide');
-});
-$("#pastOrders").on("show.bs.collapse", function(){
-    $("#editInfo").collapse('hide');
-    $("#points").collapse('hide');
-});
-});
-</script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="bootstrap-4.5.3-dist/bootstrap-4.5.3-dist/js/bootstrap.js"></script>
+    <script src="index.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#editInfo").on("show.bs.collapse", function() {
+                $("#pastOrders").collapse('hide');
+                $("#points").collapse('hide');
+            });
+            $("#points").on("show.bs.collapse", function() {
+                $("#pastOrders").collapse('hide');
+                $("#editInfo").collapse('hide');
+            });
+            $("#pastOrders").on("show.bs.collapse", function() {
+                $("#editInfo").collapse('hide');
+                $("#points").collapse('hide');
+            });
+        });
+    </script>
 
 
 </body>
+
 </html>

@@ -9,11 +9,11 @@
     <link rel="stylesheet" type="text/css" href="swipe.css">
     <link rel="stylesheet" type="text/css" href="Restaurant.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-   
+
 </head>
 
 <body>
-            <!-- Nav Bar -->
+    <!-- Nav Bar -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: tomato;">
         <a class="navbar-brand" href="#">TinderEats</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,132 +21,127 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <ul class="navbar-nav mr-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Swipe</a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="Matches.html">Matches</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Surprise.html">Surprise Me</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="NavDrop" role="button" 
-                data-toggle="dropdown">Account</a>
-                <div class="dropdown-menu">
-                  <a id="signNav" class="dropdown-item" data-toggle="modal" data-target="#signUp" href="#signUp">Sign Up</a>
-                  <a id="logNav" class="dropdown-item" data-toggle="modal" data-target="#logIn"href="#logIn">Log In</a>
-                  <div class="dropdown-divider"></div>
-                  <a id="accNav" class="dropdown-item disabled" href="Account.html">View Account</a>
-                  <a id="outNav" class="dropdown-item disabled" href="#logOut">Log Out</a>
-                </div>
-              </li>
-                
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Swipe</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="Matches.html">Matches</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Surprise.html">Surprise Me</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="NavDrop" role="button" data-toggle="dropdown">Account</a>
+                    <div class="dropdown-menu">
+                        <a id="signNav" class="dropdown-item" data-toggle="modal" data-target="#signUp" href="#signUp">Sign Up</a>
+                        <a id="logNav" class="dropdown-item" data-toggle="modal" data-target="#logIn" href="#logIn">Log In</a>
+                        <div class="dropdown-divider"></div>
+                        <a id="accNav" class="dropdown-item disabled" href="Account.html">View Account</a>
+                        <a id="outNav" class="dropdown-item disabled" href="#logOut">Log Out</a>
+                    </div>
+                </li>
+
             </ul>
 
         </div>
     </nav>
     <!-- Modal -->
     <div id="signUp" class="modal fade" role="dialog">
-      <div class="modal-dialog">
+        <div class="modal-dialog">
 
-          <!-- Modal content-->
-          <div class="modal-content">
-              <div class="modal-header">
-                  <h4 class="modal-title">Just Let us Know Who You Are!</h4>
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-              </div>
-              <div class="modal-body">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Just Let us Know Who You Are!</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
 
-                <div class="form-group">
-                  <label for="firstName">First Name</label>
-                  <input type="name" class="form-control" id="firstName"  placeholder="Your Name">
-      
-              </div>
-              <div class="form-group">
-                  <label for="lastName">Last Name</label>
-                  <input type="name" class="form-control" id="LastName"  placeholder="Your Name">
-                  
-              </div>
-              <div class="form-group">
-                  <label for="number">Phone Number</label>
-                  <input type="number" class="form-control" id="phone"  placeholder="(123)-456-7890">
-                  
-              </div>
-              <div class="form-group">
-                  <label for="email">Email Address</label>
-                  <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="jondoe@gmail.com">
-                  
-              </div>
-              <div class="form-group">
-                  <label for="password">Password</label>
-                  <input type="password" class="form-control" id="password"  placeholder="*******">
-                  
-              </div>
-              <div class="form-group">
-                <label for="password">Confirm Password</label>
-                <input type="password" class="form-control" id="password"  placeholder="*******">
-                
-            </div>
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="name" class="form-control" id="firstName" placeholder="Your Name">
 
-              </div>
-              <div class="modal-footer">
-                  <button id="signup" data-dismiss="modal" type="button" class="btn btn-default" 
-                   >Sign Up Now</button>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="name" class="form-control" id="LastName" placeholder="Your Name">
 
-                   <button data-dismiss="modal" type="button" class="float-left btn btn-default" 
-                   data-toggle="modal" data-target="#logIn">or Log In</button>
+                    </div>
+                    <div class="form-group">
+                        <label for="number">Phone Number</label>
+                        <input type="number" class="form-control" id="phone" placeholder="(123)-456-7890">
 
-                   <!-- <div class="col-sm-4">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="jondoe@gmail.com">
+
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="*******">
+
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Confirm Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="*******">
+
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button id="signup" data-dismiss="modal" type="button" class="btn btn-default">Sign Up Now</button>
+
+                    <button data-dismiss="modal" type="button" class="float-left btn btn-default" data-toggle="modal" data-target="#logIn">or Log In</button>
+
+                    <!-- <div class="col-sm-4">
                       <button type="button" class="btn "><i ></i> Add New</button>
                   </div> -->
-              </div>
-          </div>
-
-      </div>
-  </div>
-  <!-- Modal -->
-  <div id="logIn" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-
-        <!-- Modal content-->
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title">Welcome Back!</h4>
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
             </div>
-            <div class="modal-body">
 
-              
-            
-            <div class="form-group">
-                <label for="email">Email Address</label>
-                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="jondoe@gmail.com">
-                
-            </div>
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" class="form-control" id="password"  placeholder="*******">
-                
-            </div>
-            
+        </div>
+    </div>
+    <!-- Modal -->
+    <div id="logIn" class="modal fade" role="dialog">
+        <div class="modal-dialog">
 
-            </div>
-            <div class="modal-footer">
-                <button id="login" data-dismiss="modal" type="button" class="btn btn-default" 
-                 >Log In</button>
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Welcome Back!</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
 
-                 <button data-dismiss="modal" type="button" class="float-left btn btn-default" 
-                 data-toggle="modal" data-target="#signUp">or Sign Up</button>
 
-                 <!-- <div class="col-sm-4">
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="jondoe@gmail.com">
+
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="*******">
+
+                    </div>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button id="login" data-dismiss="modal" type="button" class="btn btn-default">Log In</button>
+
+                    <button data-dismiss="modal" type="button" class="float-left btn btn-default" data-toggle="modal" data-target="#signUp">or Sign Up</button>
+
+                    <!-- <div class="col-sm-4">
                     <button type="button" class="btn "><i ></i> Add New</button>
                 </div> -->
+                </div>
             </div>
-        </div>
 
+        </div>
     </div>
-</div>
     <!-- End Nav Bar -->
 
 
@@ -157,336 +152,334 @@
     </div>
 
 
-    <div class="col-7 test card text-left">
-        <h1>
-             Your Order
-        </h1>
-        <div class=" order-info">
-            <div class="cart-container">
-                <div class="container-lg">
-                    <div class="table-responsive">
-                        <div class="table-wrapper">
-                            <div class="table-title">
-                                <div class="row">
-                                    <div class="col-sm-8">
-                                        <h2>Your Order<b></b></h2>
-                                    </div>
+    <div class="row">
 
-                                </div>
-                            </div>
-                            <table class="table table-bordered">
-                                <thead>
-                                    <tr>
-                                        <th>Item Name</th>
-                                        <th>Amount</th>
-                                        <th>Price</th>
-                                        <th>Actions</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Cutlery</td>
-                                        <td>1</td>
-                                        <td>$0</td>
-                                        <td>
-                                            
-                                            <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">clear</i></a>
-                                        </td>
-                                    </tr>
-                                    
-                                    
-
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <a type="button" class="btn btn-default" href="Checkout.html">Check Out</a>
-    </div>
-
-
-    <div class="container text-left my-3 category-bar">
-        <h2 class="font-weight-light">Category Name</h2>
-        <div class="row mx-auto my-auto">
-            <div id="cat1" class="carousel slide w-100" data-interval="false" data-ride="carousel">
-                <div class="carousel-inner w-100" role="listbox">
-                    <div class="carousel-item active">
-                        <div class="col-md-3">
-                            <button button type="button" class="card card-body" data-toggle="modal" data-target="#myModal">
+        <div class="col-8">
+            <div class="container text-left w-100 my-3 category-bar">
+                <h2 class="font-weight-light">Category Name</h2>
+                <div class="row mx-auto my-auto">
+                    <div id="cat1" class="carousel slide w-100" data-interval="false" data-ride="carousel">
+                        <div class="carousel-inner w-100" role="listbox">
+                            <div class="carousel-item active">
+                                <div class="col-md-3">
+                                    <button button type="button" class="card card-body" data-toggle="modal" data-target="#myModal">
                                 <h4>Item Name</h4>
                                 <img class="img-fluid" src="Food/img1.jpg">
                                 <h3>$1.23</h3>
                             </button>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="col-md-3">
-                            <button button type="button" class="card card-body" data-toggle="modal" data-target="#myModal">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <button button type="button" class="card card-body" data-toggle="modal" data-target="#myModal">
                                 <h3>Item Name</h3>
                                 <img class="img-fluid" src="Food/img2.jpg"></img>
                                 <h3>$1.23</h3>
                             </button>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="col-md-3">
-                            <button button type="button" class="card card-body" data-toggle="modal" data-target="#myModal">                                <h3>Item Name</h3>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <button button type="button" class="card card-body" data-toggle="modal" data-target="#myModal">                                <h3>Item Name</h3>
                                 <img class="img-fluid" src="Food/img3.jpg">
                                 <h3>$1.23</h3>
                             </button>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="col-md-3">
-                            <button button type="button" class="card card-body" data-toggle="modal" data-target="#myModal">                                <h3>Item Name</h3>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <button button type="button" class="card card-body" data-toggle="modal" data-target="#myModal">                                <h3>Item Name</h3>
                                 <img class="img-fluid" src="Food/img4.jpg">
                                 <h3>$1.23</h3>
                             </button>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="col-md-3">
-                            <button button type="button" class="card card-body" data-toggle="modal" data-target="#myModal">                                <h3>Item Name</h3>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <button button type="button" class="card card-body" data-toggle="modal" data-target="#myModal">                                <h3>Item Name</h3>
                                 <img class="img-fluid" src="Food/img5.jpg">
                                 <h3>$1.23</h3>
                             </button>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="col-md-3">
-                            <button button type="button" class="card card-body" data-toggle="modal" data-target="#myModal">                                <h3>Item Name</h3>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <button button type="button" class="card card-body" data-toggle="modal" data-target="#myModal">                                <h3>Item Name</h3>
                                 <img class="img-fluid" src="Food/img6.jpg">
                                 <h3>$1.23</h3>
                             </button>
+                                </div>
+                            </div>
                         </div>
+                        <a class="carousel-control-prev w-auto" href="#cat1" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next w-auto" href="#cat1" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
                     </div>
                 </div>
-                <a class="carousel-control-prev w-auto" href="#cat1" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next w-auto" href="#cat1" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+            </div>
+
+            <div class="container text-left  w-100 my-3 category-bar">
+                <h2 class="font-weight-light">Category Name</h2>
+                <div class="row mx-auto my-auto">
+                    <div id="cat2" class="carousel slide w-100" data-interval="false" data-ride="carousel">
+                        <div class="carousel-inner w-100" role="listbox">
+                            <div class="carousel-item active">
+                                <div class="col-md-3">
+                                    <div class="card card-body">
+                                        <h3>Item Name</h3>
+                                        <img class="img-fluid" src="Food/img1.jpg">
+                                        <h3>$1.23</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <div class="card card-body">
+                                        <h3>Item Name</h3>
+                                        <img class="img-fluid" src="Food/img2.jpg">
+                                        <h3>$1.23</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <div class="card card-body">
+                                        <h3>Item Name</h3>
+                                        <img class="img-fluid" src="Food/img3.jpg">
+                                        <h3>$1.23</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <div class="card card-body">
+                                        <h3>Item Name</h3>
+                                        <img class="img-fluid" src="Food/img4.jpg">
+                                        <h3>$1.23</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <div class="card card-body">
+                                        <h3>Item Name</h3>
+                                        <img class="img-fluid" src="Food/img5.jpg">
+                                        <h3>$1.23</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <div class="card card-body">
+                                        <h3>Item Name</h3>
+                                        <img class="img-fluid" src="Food/img6.jpg">
+                                        <h3>$1.23</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev w-auto" href="#cat2" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next w-auto" href="#cat2" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container text-left  w-100 my-3 category-bar">
+                <h2 class="font-weight-light">Category Name</h2>
+                <div class="row mx-auto my-auto">
+                    <div id="cat1" class="carousel slide w-100" data-interval="false" data-ride="carousel">
+                        <div class="carousel-inner w-100" role="listbox">
+                            <div class="carousel-item active">
+                                <div class="col-md-3">
+                                    <div class="card card-body">
+                                        <h3>Item Name</h3>
+                                        <img class="img-fluid" src="Food/img1.jpg">
+                                        <h3>$1.23</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <div class="card card-body">
+                                        <h3>Item Name</h3>
+                                        <img class="img-fluid" src="Food/img2.jpg">
+                                        <h3>$1.23</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <div class="card card-body">
+                                        <h3>Item Name</h3>
+                                        <img class="img-fluid" src="Food/img3.jpg">
+                                        <h3>$1.23</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <div class="card card-body">
+                                        <h3>Item Name</h3>
+                                        <img class="img-fluid" src="Food/img4.jpg">
+                                        <h3>$1.23</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <div class="card card-body">
+                                        <h3>Item Name</h3>
+                                        <img class="img-fluid" src="Food/img5.jpg">
+                                        <h3>$1.23</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <div class="card card-body">
+                                        <h3>Item Name</h3>
+                                        <img class="img-fluid" src="Food/img6.jpg">
+                                        <h3>$1.23</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev w-auto" href="#cat1" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next w-auto" href="#cat1" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container text-left  w-100 my-3 category-bar">
+                <h2 class="font-weight-light">Category Name</h2>
+                <div class="row mx-auto my-auto">
+                    <div id="cat1" class="carousel slide w-100" data-interval="false" data-ride="carousel">
+                        <div class="carousel-inner w-100" role="listbox">
+                            <div class="carousel-item active">
+                                <div class="col-md-3">
+                                    <div class="card card-body">
+                                        <h3>Item Name</h3>
+                                        <img class="img-fluid" src="Food/img1.jpg">
+                                        <h3>$1.23</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <div class="card card-body">
+                                        <h3>Item Name</h3>
+                                        <img class="img-fluid" src="Food/img2.jpg">
+                                        <h3>$1.23</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <div class="card card-body">
+                                        <h3>Item Name</h3>
+                                        <img class="img-fluid" src="Food/img3.jpg">
+                                        <h3>$1.23</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <div class="card card-body">
+                                        <h3>Item Name</h3>
+                                        <img class="img-fluid" src="Food/img4.jpg">
+                                        <h3>$1.23</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <div class="card card-body">
+                                        <h3>Item Name</h3>
+                                        <img class="img-fluid" src="Food/img5.jpg">
+                                        <h3>$1.23</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-md-3">
+                                    <div class="card card-body">
+                                        <h3>Item Name</h3>
+                                        <img class="img-fluid" src="Food/img6.jpg">
+                                        <h3>$1.23</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev w-auto" href="#cat1" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next w-auto" href="#cat1" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div class="container text-left  my-3 category-bar">
-        <h2 class="font-weight-light">Category Name</h2>
-        <div class="row mx-auto my-auto">
-            <div id="cat2" class="carousel slide w-100" data-interval="false" data-ride="carousel">
-                <div class="carousel-inner w-100" role="listbox">
-                    <div class="carousel-item active">
-                        <div class="col-md-3">
-                            <div class="card card-body">
-                                <h3>Item Name</h3>
-                                <img class="img-fluid" src="Food/img1.jpg">
-                                <h3>$1.23</h3>
+        <div class="col card order-info">
+            <div class="jumbotron card sticky-top">
+                <h1 class=>
+                    Your Order
+                </h1>
+                <div>
+
+                    <div class="container-lg">
+                        <div class="table-responsive">
+                            <div class="table-wrapper">
+
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th style="width: 10%"></th>
+                                            <th style="width: 55%">Item Name</th>
+                                            <th style="width: 15%">Qty.</th>
+                                            <th style="width: 20%">$</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+
+                                                <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">clear</i></a>
+                                            </td>
+                                            <td>Cutlery</td>
+                                            <td>1</td>
+                                            <td>$0</td>
+
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="col-md-3">
-                            <div class="card card-body">
-                                <h3>Item Name</h3>
-                                <img class="img-fluid" src="Food/img2.jpg">
-                                <h3>$1.23</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="col-md-3">
-                            <div class="card card-body">
-                                <h3>Item Name</h3>
-                                <img class="img-fluid" src="Food/img3.jpg">
-                                <h3>$1.23</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="col-md-3">
-                            <div class="card card-body">
-                                <h3>Item Name</h3>
-                                <img class="img-fluid" src="Food/img4.jpg">
-                                <h3>$1.23</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="col-md-3">
-                            <div class="card card-body">
-                                <h3>Item Name</h3>
-                                <img class="img-fluid" src="Food/img5.jpg">
-                                <h3>$1.23</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="col-md-3">
-                            <div class="card card-body">
-                                <h3>Item Name</h3>
-                                <img class="img-fluid" src="Food/img6.jpg">
-                                <h3>$1.23</h3>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
-                <a class="carousel-control-prev w-auto" href="#cat2" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next w-auto" href="#cat2" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <div class="container text-left  my-3 category-bar">
-        <h2 class="font-weight-light">Category Name</h2>
-        <div class="row mx-auto my-auto">
-            <div id="cat1" class="carousel slide w-100" data-interval="false" data-ride="carousel">
-                <div class="carousel-inner w-100" role="listbox">
-                    <div class="carousel-item active">
-                        <div class="col-md-3">
-                            <div class="card card-body">
-                                <h3>Item Name</h3>
-                                <img class="img-fluid" src="Food/img1.jpg">
-                                <h3>$1.23</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="col-md-3">
-                            <div class="card card-body">
-                                <h3>Item Name</h3>
-                                <img class="img-fluid" src="Food/img2.jpg">
-                                <h3>$1.23</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="col-md-3">
-                            <div class="card card-body">
-                                <h3>Item Name</h3>
-                                <img class="img-fluid" src="Food/img3.jpg">
-                                <h3>$1.23</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="col-md-3">
-                            <div class="card card-body">
-                                <h3>Item Name</h3>
-                                <img class="img-fluid" src="Food/img4.jpg">
-                                <h3>$1.23</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="col-md-3">
-                            <div class="card card-body">
-                                <h3>Item Name</h3>
-                                <img class="img-fluid" src="Food/img5.jpg">
-                                <h3>$1.23</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="col-md-3">
-                            <div class="card card-body">
-                                <h3>Item Name</h3>
-                                <img class="img-fluid" src="Food/img6.jpg">
-                                <h3>$1.23</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <a class="carousel-control-prev w-auto" href="#cat1" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next w-auto" href="#cat1" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </div>
-    </div>
-
-    <div class="container text-left  my-3 category-bar">
-        <h2 class="font-weight-light">Category Name</h2>
-        <div class="row mx-auto my-auto">
-            <div id="cat1" class="carousel slide w-100" data-interval="false" data-ride="carousel">
-                <div class="carousel-inner w-100" role="listbox">
-                    <div class="carousel-item active">
-                        <div class="col-md-3">
-                            <div class="card card-body">
-                                <h3>Item Name</h3>
-                                <img class="img-fluid" src="Food/img1.jpg">
-                                <h3>$1.23</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="col-md-3">
-                            <div class="card card-body">
-                                <h3>Item Name</h3>
-                                <img class="img-fluid" src="Food/img2.jpg">
-                                <h3>$1.23</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="col-md-3">
-                            <div class="card card-body">
-                                <h3>Item Name</h3>
-                                <img class="img-fluid" src="Food/img3.jpg">
-                                <h3>$1.23</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="col-md-3">
-                            <div class="card card-body">
-                                <h3>Item Name</h3>
-                                <img class="img-fluid" src="Food/img4.jpg">
-                                <h3>$1.23</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="col-md-3">
-                            <div class="card card-body">
-                                <h3>Item Name</h3>
-                                <img class="img-fluid" src="Food/img5.jpg">
-                                <h3>$1.23</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="col-md-3">
-                            <div class="card card-body">
-                                <h3>Item Name</h3>
-                                <img class="img-fluid" src="Food/img6.jpg">
-                                <h3>$1.23</h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <a class="carousel-control-prev w-auto" href="#cat1" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next w-auto" href="#cat1" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+                <a type="button" class="btn btn-default" href="Checkout.html">Check Out</a>
             </div>
         </div>
     </div>
@@ -507,12 +500,12 @@
                     <form>
                         <p>This is a description of the food. It has this, this and this.</p>
                         <div id="option">
-                        <input type="radio" id="option1" class="active" name="options" value="0">
-                        <label for="option1">Option 1 - Free</label><br>
-                        <input type="radio" id="option2" name="options" value="5">
-                        <label for="option2">Option 2  + $5.00</label><br>
-                        <input type="radio" id="option3" name="options" value="5">
-                        <label for="option3">Option 3  + $5.00</label><br><br>
+                            <input type="radio" id="option1" class="active" name="options" value="0">
+                            <label for="option1">Option 1 - Free</label><br>
+                            <input type="radio" id="option2" name="options" value="5">
+                            <label for="option2">Option 2  + $5.00</label><br>
+                            <input type="radio" id="option3" name="options" value="5">
+                            <label for="option3">Option 3  + $5.00</label><br><br>
                         </div>
 
 
@@ -532,10 +525,9 @@
 
                 </div>
                 <div class="modal-footer">
-                    <button data-dismiss="modal" type="button" class="btn btn-default btn-info add-new" class="fa fa-plus" id="addCart"
-                     >Add to cart: $<b></b></button>
+                    <button data-dismiss="modal" type="button" class="btn btn-default btn-info add-new" class="fa fa-plus" id="addCart">Add to cart: $<b></b></button>
 
-                     <!-- <div class="col-sm-4">
+                    <!-- <div class="col-sm-4">
                         <button type="button" class="btn "><i ></i> Add New</button>
                     </div> -->
                 </div>

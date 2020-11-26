@@ -20,67 +20,67 @@ $('.carousel .carousel-item').each(function() {
     }
 });
 
-$(document).ready(function(){
+$(document).ready(function() {
     var addVal = 0.0;
     var newVal = 0.0;
     sessionStorage.setItem("currItem", 1.23);
     $("#addCart b").html(sessionStorage.getItem("currItem"));
 
-    $("#option").change(function(){
+    $("#option").change(function() {
         addVal = Number($("input[name=options]:checked").val());
         sessionStorage.setItem("currItem", sessionStorage.getItem("currItem") + addVal);
         $("#addCart b").html(sessionStorage.getItem("currItem"));
     })
 
-    $("#addon1").click(function(){
+    $("#addon1").click(function() {
         addVal = Number($("addon1").val());
-        if($("addon1").is("checked")){
+        if ($("addon1").is("checked")) {
             newVal = addVal + Number(sessionStorage.getItem("currItem"));
             sessionStorage.setItem("currItem", newVal);
-        }
-        else{
+        } else {
             newVal = addVal - Number(sessionStorage.getItem("currItem"));
             sessionStorage.setItem("currItem", newVal);
         }
 
         $("#addCart b").html(sessionStorage.getItem("currItem"));
-        
+
     })
-    
-    
+
+
 })
 
 
 
-$(document).ready(function(){
-	$('[data-toggle="tooltip"]').tooltip();
-	var actions = $("table td:last-child").html();
-	// Append table with add row form on add new button click
-    $(".add-new").click(function(){
-		//$(this).attr("disabled", "disabled");
-		var index = $("table tbody tr:last-child").index();
+$(document).ready(function() {
+    $('[data-toggle="tooltip"]').tooltip();
+    var actions = $("table td:first-child").html();
+    // Append table with add row form on add new button click
+    $(".add-new").click(function() {
+        //$(this).attr("disabled", "disabled");
+        var index = $("table tbody tr:last-child").index();
         var row = '<tr>' +
+            '<td>' + actions + '</td>' +
             '<td>Item Name</td>' +
             '<td>1</td>' +
             '<td> $15.00 </td>' +
-			'<td>' + actions + '</td>' +
-        '</tr>';
-    	$("table").append(row);		
-		$("table tbody tr").eq(index + 1);//.find(".add, .edit").toggle();
-        
+
+            '</tr>';
+        $("table").append(row);
+        $("table tbody tr").eq(index + 1); //.find(".add, .edit").toggle();
+
     });
-	
-	// Edit row on edit button click
-	$(document).on("click", ".edit", function(){		
-        $(this).parents("tr").find("td:not(:last-child)").each(function(){
-			$(this).html('<input type="text" class="form-control" value="' + $(this).text() + '">');
-		});		
-		$(this).parents("tr").find(".add, .edit").toggle();
-		$(".add-new").attr("disabled", "disabled");
+
+    // Edit row on edit button click
+    $(document).on("click", ".edit", function() {
+        $(this).parents("tr").find("td:not(:last-child)").each(function() {
+            $(this).html('<input type="text" class="form-control" value="' + $(this).text() + '">');
+        });
+        $(this).parents("tr").find(".add, .edit").toggle();
+        $(".add-new").attr("disabled", "disabled");
     });
-	// Delete row on delete button click
-	$(document).on("click", ".delete", function(){
+    // Delete row on delete button click
+    $(document).on("click", ".delete", function() {
         $(this).parents("tr").remove();
-		$(".add-new").removeAttr("disabled");
+        $(".add-new").removeAttr("disabled");
     });
 });

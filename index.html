@@ -47,143 +47,138 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Swipe <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Matches.html">Matches</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Surprise.html">Surprise Me</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="NavDrop" role="button" 
-                data-toggle="dropdown">Account</a>
-                <div class="dropdown-menu">
-                  <a id="signNav" class="dropdown-item" data-toggle="modal" data-target="#signUp" href="#signUp">Sign Up</a>
-                  <a id="logNav" class="dropdown-item" data-toggle="modal" data-target="#logIn"href="#logIn">Log In</a>
-                  <div class="dropdown-divider"></div>
-                  <a id="accNav" class="dropdown-item disabled" href="Account.html">View Account</a>
-                  <a id="outNav" class="dropdown-item disabled" href="#logOut">Log Out</a>
-                </div>
-              </li>
-                
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Swipe <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Matches.html">Matches</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Surprise.html">Surprise Me</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="NavDrop" role="button" data-toggle="dropdown">Account</a>
+                    <div class="dropdown-menu">
+                        <a id="signNav" class="dropdown-item" data-toggle="modal" data-target="#signUp" href="#signUp">Sign Up</a>
+                        <a id="logNav" class="dropdown-item" data-toggle="modal" data-target="#logIn" href="#logIn">Log In</a>
+                        <div class="dropdown-divider"></div>
+                        <a id="accNav" class="dropdown-item disabled" href="Account.html">View Account</a>
+                        <a id="outNav" class="dropdown-item disabled" href="#logOut">Log Out</a>
+                    </div>
+                </li>
+
             </ul>
 
         </div>
     </nav>
     <!-- Modal -->
     <div id="signUp" class="modal fade" role="dialog">
-      <div class="modal-dialog">
+        <div class="modal-dialog">
 
-          <!-- Modal content-->
-          <div class="modal-content">
-              <div class="modal-header">
-                  <h4 class="modal-title">Just Let us Know Who You Are!</h4>
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-              </div>
-              <div class="modal-body">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Just Let us Know Who You Are!</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
 
-                <div class="form-group">
-                  <label for="firstName">First Name</label>
-                  <input type="name" class="form-control" id="firstName"  placeholder="Your Name">
-      
-              </div>
-              <div class="form-group">
-                  <label for="lastName">Last Name</label>
-                  <input type="name" class="form-control" id="LastName"  placeholder="Your Name">
-                  
-              </div>
-              <div class="form-group">
-                  <label for="number">Phone Number</label>
-                  <input type="number" class="form-control" id="phone"  placeholder="(123)-456-7890">
-                  
-              </div>
-              <div class="form-group">
-                  <label for="email">Email Address</label>
-                  <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="jondoe@gmail.com">
-                  
-              </div>
-              <div class="form-group">
-                  <label for="password">Password</label>
-                  <input type="password" class="form-control" id="password"  placeholder="*******">
-                  
-              </div>
-              <div class="form-group">
-                <label for="password">Confirm Password</label>
-                <input type="password" class="form-control" id="password"  placeholder="*******">
-                
-            </div>
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="name" class="form-control" id="firstName" placeholder="Your Name">
 
-              </div>
-              <div class="modal-footer">
-                  <button id="signup" data-dismiss="modal" type="button" class="btn btn-default" 
-                   >Sign Up Now</button>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="name" class="form-control" id="LastName" placeholder="Your Name">
 
-                   <button data-dismiss="modal" type="button" class="float-left btn btn-default" 
-                   data-toggle="modal" data-target="#logIn">or Log In</button>
+                    </div>
+                    <div class="form-group">
+                        <label for="number">Phone Number</label>
+                        <input type="number" class="form-control" id="phone" placeholder="(123)-456-7890">
 
-                   <!-- <div class="col-sm-4">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="jondoe@gmail.com">
+
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="*******">
+
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Confirm Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="*******">
+
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button id="signup" data-dismiss="modal" type="button" class="btn btn-default">Sign Up Now</button>
+
+                    <button data-dismiss="modal" type="button" class="float-left btn btn-default" data-toggle="modal" data-target="#logIn">or Log In</button>
+
+                    <!-- <div class="col-sm-4">
                       <button type="button" class="btn "><i ></i> Add New</button>
                   </div> -->
-              </div>
-          </div>
-
-      </div>
-  </div>
-  <!-- Modal -->
-  <div id="logIn" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-
-        <!-- Modal content-->
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title">Welcome Back!</h4>
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
             </div>
-            <div class="modal-body">
 
-              
-            
-            <div class="form-group">
-                <label for="email">Email Address</label>
-                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="jondoe@gmail.com">
-                
-            </div>
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" class="form-control" id="password"  placeholder="*******">
-                
-            </div>
-            
+        </div>
+    </div>
+    <!-- Modal -->
+    <div id="logIn" class="modal fade" role="dialog">
+        <div class="modal-dialog">
 
-            </div>
-            <div class="modal-footer">
-                <button id="login" data-dismiss="modal" type="button" class="btn btn-default" 
-                 >Log In</button>
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Welcome Back!</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
 
-                 <button data-dismiss="modal" type="button" class="float-left btn btn-default" 
-                 data-toggle="modal" data-target="#signUp">or Sign Up</button>
 
-                 <!-- <div class="col-sm-4">
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="jondoe@gmail.com">
+
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="*******">
+
+                    </div>
+
+
+                </div>
+                <div class="modal-footer">
+                    <button id="login" data-dismiss="modal" type="button" class="btn btn-default">Log In</button>
+
+                    <button data-dismiss="modal" type="button" class="float-left btn btn-default" data-toggle="modal" data-target="#signUp">or Sign Up</button>
+
+                    <!-- <div class="col-sm-4">
                     <button type="button" class="btn "><i ></i> Add New</button>
                 </div> -->
+                </div>
             </div>
-        </div>
 
+        </div>
     </div>
-</div>
     <!-- End Nav Bar -->
 
 
     <div class="container swipe-interface">
         <div class="row">
             <div class="col-sm d-flex flex-row-reverse">
-                <a class="btn-floating-left" href="#swipeC" data-slide="next"><i 
+                <a class="btn-floating-left" href="#swipeC" data-slide="next" data-toggle="tooltip" title="Swipe left to tell us you don't like this"><i 
                     class="fas fa-chevron-right"></i></a>
             </div>
             <div class="col-6">
-                <div id="swipeC" class="carousel slide"  data-interval="false">
+                <div id="swipeC" class="carousel slide" data-interval="false">
 
 
 
@@ -203,7 +198,7 @@
                                         <h5>$19.99</h5>
                                         <p class="card-text">Mouth watering description of the food.</p>
                                         <div class="text-center">
-                                        <a id="Pines" href="Restaurant.html" class="btn btn-default btn-lg">I Want This!</a>
+                                            <a id="Pines" href="Restaurant.html" class="btn btn-default btn-lg" data-toggle="tooltip" title="Done deciding, and just want to order this?">I Want This!</a>
                                         </div>
                                     </div>
                                 </div>
@@ -223,12 +218,12 @@
                                 <div class="card mb-2">
                                     <img class="card-img-top" src="Food/img2.jpg" alt="Card image cap">
                                     <div class="card-body">
-                                      <h4 class="card-title">Item Name - Restaurant Name</h4>
-                                      <h5>$19.99</h5>
-                                      <p class="card-text">Mouth watering description of the food.</p>
-                                     
-                                      <div class="text-center">
-                                        <a href="Restaurant.html" class="btn btn-default btn-lg">I Want This!</a>
+                                        <h4 class="card-title">Item Name - Restaurant Name</h4>
+                                        <h5>$19.99</h5>
+                                        <p class="card-text">Mouth watering description of the food.</p>
+
+                                        <div class="text-center">
+                                            <a href="Restaurant.html" class="btn btn-default btn-lg">I Want This!</a>
                                         </div>
                                     </div>
                                 </div>
@@ -248,12 +243,12 @@
                                 <div class="card mb-2">
                                     <img class="card-img-top" src="Food/img3.jpg" alt="Card image cap">
                                     <div class="card-body">
-                                      <h4 class="card-title">Item Name - Restaurant Name</h4>
-                                      <h5>$19.99</h5>
-                                      <p class="card-text">Mouth watering description of the food.</p>
-                                     
-                                      <div class="text-center">
-                                        <a href="Restaurant.html" class="btn btn-default btn-lg">I Want This!</a>
+                                        <h4 class="card-title">Item Name - Restaurant Name</h4>
+                                        <h5>$19.99</h5>
+                                        <p class="card-text">Mouth watering description of the food.</p>
+
+                                        <div class="text-center">
+                                            <a href="Restaurant.html" class="btn btn-default btn-lg">I Want This!</a>
                                         </div>
                                     </div>
                                 </div>
@@ -263,97 +258,97 @@
                         <!--Fourth slide-->
                         <div class="carousel-item">
 
-                          <div class="col-md-12">
-                              <div class="card mb-2">
-                                  <img class="card-img-top" src="Food/img4.jpg" alt="Card image cap">
-                                  <div class="card-body">
-                                    <h4 class="card-title">Item Name - Restaurant Name</h4>
-                                    <h5>$19.99</h5>
-                                    <p class="card-text">Mouth watering description of the food.</p>
-                                   
-                                    <div class="text-center">
-                                      <a href="Restaurant.html" class="btn btn-default btn-lg">I Want This!</a>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                      
-                      <!--Fifth slide-->
-                      <div class="carousel-item">
+                            <div class="col-md-12">
+                                <div class="card mb-2">
+                                    <img class="card-img-top" src="Food/img4.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Item Name - Restaurant Name</h4>
+                                        <h5>$19.99</h5>
+                                        <p class="card-text">Mouth watering description of the food.</p>
 
-                        <div class="col-md-12">
-                            <div class="card mb-2">
-                                <img class="card-img-top" src="Food/img5.jpg" alt="Card image cap">
-                                <div class="card-body">
-                                  <h4 class="card-title">Item Name - Restaurant Name</h4>
-                                  <h5>$19.99</h5>
-                                  <p class="card-text">Mouth watering description of the food.</p>
-                                 
-                                  <div class="text-center">
-                                    <a href="Restaurant.html" class="btn btn-default btn-lg">I Want This!</a>
+                                        <div class="text-center">
+                                            <a href="Restaurant.html" class="btn btn-default btn-lg">I Want This!</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                  
-                    <!--Sixth slide-->
-                    <div class="carousel-item">
 
-                      <div class="col-md-12">
-                          <div class="card mb-2">
-                              <img class="card-img-top" src="Food/img6.jpg" alt="Card image cap">
-                              <div class="card-body">
-                                <h4 class="card-title">Item Name - Restaurant Name</h4>
-                                <h5>$19.99</h5>
-                                <p class="card-text">Mouth watering description of the food.</p>
-                               
-                                <div class="text-center">
-                                  <a href="Restaurant.html" class="btn btn-default btn-lg">I Want This!</a>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  
-                  <!--Seventh slide-->
-                  <div class="carousel-item">
+                        <!--Fifth slide-->
+                        <div class="carousel-item">
 
-                    <div class="col-md-12">
-                        <div class="card mb-2">
-                            <img class="card-img-top" src="Food/img7.jpg" alt="Card image cap">
-                            <div class="card-body">
-                              <h4 class="card-title">Item Name - Restaurant Name</h4>
-                              <h5>$19.99</h5>
-                              <p class="card-text">Mouth watering description of the food.</p>
-                             
-                              <div class="text-center">
-                                <a href="Restaurant.html" class="btn btn-default btn-lg">I Want This!</a>
+                            <div class="col-md-12">
+                                <div class="card mb-2">
+                                    <img class="card-img-top" src="Food/img5.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Item Name - Restaurant Name</h4>
+                                        <h5>$19.99</h5>
+                                        <p class="card-text">Mouth watering description of the food.</p>
+
+                                        <div class="text-center">
+                                            <a href="Restaurant.html" class="btn btn-default btn-lg">I Want This!</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-                
-                <div class="carousel-item">
 
-                  <div class="col-md-12">
-                      <div class="card mb-2">
-                          <img class="card-img-top" src="Food/img8.jpg" alt="Card image cap">
-                          <div class="card-body">
-                            <h4 class="card-title">Item Name - Restaurant Name</h4>
-                            <h5>$19.99</h5>
-                            <p class="card-text">Mouth watering description of the food.</p>
-                           
-                            <div class="text-center">
-                              <a href="Restaurant.html" class="btn btn-default btn-lg">I Want This!</a>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              <!--/.Third slide-->
+                        <!--Sixth slide-->
+                        <div class="carousel-item">
+
+                            <div class="col-md-12">
+                                <div class="card mb-2">
+                                    <img class="card-img-top" src="Food/img6.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Item Name - Restaurant Name</h4>
+                                        <h5>$19.99</h5>
+                                        <p class="card-text">Mouth watering description of the food.</p>
+
+                                        <div class="text-center">
+                                            <a href="Restaurant.html" class="btn btn-default btn-lg">I Want This!</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Seventh slide-->
+                        <div class="carousel-item">
+
+                            <div class="col-md-12">
+                                <div class="card mb-2">
+                                    <img class="card-img-top" src="Food/img7.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Item Name - Restaurant Name</h4>
+                                        <h5>$19.99</h5>
+                                        <p class="card-text">Mouth watering description of the food.</p>
+
+                                        <div class="text-center">
+                                            <a href="Restaurant.html" class="btn btn-default btn-lg">I Want This!</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+
+                            <div class="col-md-12">
+                                <div class="card mb-2">
+                                    <img class="card-img-top" src="Food/img8.jpg" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Item Name - Restaurant Name</h4>
+                                        <h5>$19.99</h5>
+                                        <p class="card-text">Mouth watering description of the food.</p>
+
+                                        <div class="text-center">
+                                            <a href="Restaurant.html" class="btn btn-default btn-lg">I Want This!</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/.Third slide-->
 
                         <!--/.Slides-->
 
@@ -363,7 +358,7 @@
             </div>
             <div class="col-sm d-flex flex-row ">
 
-                <a class="btn-floating-right" href="#swipeC" data-slide="prev">
+                <a class="btn-floating-right" href="#swipeC" data-slide="prev" data-toggle="tooltip" title="Swipe right if you're interested in this dish">
                     <i class="fas fa-chevron-right">    
     
                     </i>
@@ -377,56 +372,52 @@
 
 
     <p>
-        <a href="Matches.html" class="btn btn-default btn-lg float-right matches-btn">
+        <a href="Matches.html" class="btn btn-default btn-lg float-right matches-btn" data-toggle="tooltip" title="See what we think you'd like">
           See Matches</a>
-          <a data-toggle="modal" data-target="#support" style="margin-left:5%;"
-          class="btn btn-default btn-lg float-left matches-btn">
+        <a data-toggle="modal" data-target="#support" style="margin-left:5%;" class="btn btn-default btn-lg float-left matches-btn">
             Support</a>
 
     </p>
-     <!-- Modal -->
-  <div id="support" class="modal fade" role="dialog">
-    <div class="modal-dialog">
+    <!-- Modal -->
+    <div id="support" class="modal fade" role="dialog">
+        <div class="modal-dialog">
 
-        <!-- Modal content-->
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title">Support</h4>
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Support</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+
+                    <p> You can contact us with any questions or concerns through any of the following!</p>
+
+                    <p>Email: support@tindereats.ca</p>
+                    <p>Twitter: @tinderEats</p>
+                    <p>Toll-Free: (123) 456-7890</p>
+
+
+
+
+                </div>
+
+                <div class="text-center">
+                    <a id="login" data-dismiss="modal" type="button" style="margin-bottom:5px;" class="btn btn-default">Close</a>
+                </div>
+
+
+
             </div>
-            <div class="modal-body">
 
-             <p> You can contact us with any questions or concerns
-                through any of the following!</p> 
-              
-              <p>Email: support@tindereats.ca</p>
-              <p>Twitter: @tinderEats</p>
-              <p>Toll-Free: (123) 456-7890</p>
-              
-    
-            
-
-            </div>
-            
-              <div class="text-center">
-                <a id="login" data-dismiss="modal" type="button" 
-                style="margin-bottom:5px;" class="btn btn-default" 
-                 >Close</a>
-              </div>
-                
-                 
-            
         </div>
-
     </div>
-</div>
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="bootstrap-4.5.3-dist/bootstrap-4.5.3-dist/js/bootstrap.js"></script>
+    <script src="bootstrap-4.5.3-dist/bootstrap-4.5.3-dist/js/bootstrap.bundle.min.js"></script>
     <script src="index.js"></script>
-    
+
 
     <!-- Script for Pop up only on first entry to index -->
     <script>
@@ -438,6 +429,10 @@
 
 
         });
+
+        $(function() {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
     </script>
 </body>
 

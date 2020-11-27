@@ -37,3 +37,11 @@
     border-style: solid;
     border-color: dimgray
 }
+
+.card-top{
+    background-color: tomato;
+}
+
+.btn-outline-secondary{
+    color:black;
+}

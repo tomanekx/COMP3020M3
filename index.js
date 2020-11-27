@@ -30,3 +30,9 @@ $(document).ready(function() {
 
 
 });
+document.getElementById("Pines").onclick = function(){
+    
+    sessionStorage.setItem("restName", "Pines Cuisine");
+    
+
+}

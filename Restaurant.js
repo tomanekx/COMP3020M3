@@ -84,3 +84,11 @@ $(document).ready(function() {
         $(".add-new").removeAttr("disabled");
     });
 });
+
+
+$(document).ready(function() {
+    if(sessionStorage.getItem("restName")!= null){
+       document.getElementById("restName").innerHTML = sessionStorage.getItem("restName"); 
+    }
+    
+});

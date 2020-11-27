@@ -18,7 +18,7 @@ label {
 .table-wrapper {
     width: 80%;
     margin: 30px auto;
-    background: #fff;
+    background: grey;
     padding: 20px;
     box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
 }
@@ -110,4 +110,7 @@ table.table .form-control.error {
 
 table.table td .add {
     display: none;
+}
+.jumbotron{
+    margin-left: 10%;
 }

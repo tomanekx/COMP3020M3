@@ -35,7 +35,8 @@
 
 .restaurant-head {
     padding: 20px;
-    background-color: lightgrey;
+    background-color: dimgray;
+    color: tomato;
 }
 
 .jumbotron {
@@ -45,6 +46,8 @@
 .category-bar {
     float: left;
     width: 75%;
+    color: black;
+    background-color: gray;
 }
 
 .order-info {
@@ -69,20 +72,20 @@ textarea {
 }
 
 body {
-    color: #404E67;
-    background: #F5F7FA;
+    color: black;
+    background:dimgray;
     font-family: 'Open Sans', sans-serif;
 }
 
 .checkout-btn {
-    width: 100%;
+    margin-left: 5%;
 }
 
 .table-wrapper {
     width: 100%;
-    margin: 10px auto;
-    background: #fff;
-    padding: 10px;
+    /* margin: 5px; */
+    background: grey;
+    /* padding: 5px; */
     box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
 }
 
@@ -170,3 +173,4 @@ table.table .form-control.error {
 table.table td .add {
     display: none;
 }
+

@@ -13,7 +13,7 @@
 }
 
 .btn-floating-left:hover {
-    border-right: 50px solid dimgray;
+    border-right: 50px solid gray;
 }
 
 .btn-floating-right {
@@ -31,7 +31,7 @@
 }
 
 .btn-floating-right:hover {
-    border-left: 50px solid dimgrey;
+    border-left: 50px solid grey;
 }
 
 .btn-default {
@@ -53,8 +53,14 @@
 
 body{
     padding-top:70px;
-    background-color: gray;
+    background-color: dimgray;
 }
 .jumbotron{
-    background-color: dimgray;
+    background-color: gray;
+}
+.card{
+    background-color: grey;
+}
+.modal-content{
+    background-color: grey;
 }

@@ -303,7 +303,7 @@
                                     <div class="table-title">
                                         <div class="row">
                                             <div class="col-sm-8">
-                                                <h2>Your Order<b></b></h2>
+                                                <h2 id="restName"><b></b></h2>
                                             </div>
     
                                         </div>
@@ -320,8 +320,44 @@
                                         <tbody>
                                             <tr>
                                                 <td>Cutlery</td>
-                                                <td>1</td>
+                                                <td>3</td>
                                                 <td>$0</td>
+                                                <td>
+                                                    
+                                                    <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">clear</i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Cheeseburger</td>
+                                                <td>1</td>
+                                                <td>$15</td>
+                                                <td>
+                                                    
+                                                    <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">clear</i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Garden Salad</td>
+                                                <td>1</td>
+                                                <td>$11</td>
+                                                <td>
+                                                    
+                                                    <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">clear</i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Miso Soup</td>
+                                                <td>2</td>
+                                                <td>$8</td>
+                                                <td>
+                                                    
+                                                    <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">clear</i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Power Bowl</td>
+                                                <td>1</td>
+                                                <td>$17</td>
                                                 <td>
                                                     
                                                     <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">clear</i></a>
@@ -332,15 +368,24 @@
     
                                         </tbody>
                                     </table>
+                                    
                                 </div>
+                                
                             </div>
+                            
                         </div>
+                        
                     </div>
+                    
                 </div>
-                <button type="button" class="btn btn-default" data-toggle="modal" href="#thankyou">Check Out</button>
+                <div style="padding-left: 250px;">
+                    <button type="button" class="btn btn-default" 
+                style="width:300px;" data-toggle="modal" href="#thankyou">Check Out</button>
+                </div>
+                
             </div>
     
-    
+                
     
         </div>
         <div id="myModal" class="modal fade" role="dialog">
@@ -356,7 +401,7 @@
                         <div class="input-group mb-3">
                             <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
                         </div>
-                        <button type="button" class="btn btn-primary" data-dismiss="modal">Add</button>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Add</button>
     
     
                     </div>
@@ -372,7 +417,24 @@
                 <!-- Modal content-->
                 <div class="modal-content">
                     <div class="modal-body">
-                        <h1>Thank you very much for ordering with us!</h1>
+                        <h1>Thank you very much for ordering with us!
+                        </h1>
+                        <p>Your food should arrive within 20-30 minutes
+                            
+                        </p>
+
+                            <br>
+                            <br>
+                            
+                            <div class="container center-text">
+                                
+                                   <a class="btn btn-default" href="index.html">Back to Swiping</a> 
+                                
+
+                                
+                            </div>
+                            
+                            
     
                     </div>
     

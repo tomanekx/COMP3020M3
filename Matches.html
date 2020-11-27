@@ -6,6 +6,8 @@
     <meta name="viewport" content="width = device-width, initial-scale = 1">
 
     <link rel="stylesheet" type="text/css" href="bootstrap-4.5.3-dist/bootstrap-4.5.3-dist/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" type="text/css" href="swipe.css">
     <link rel="stylesheet" type="text/css" href="Matches.css">
 </head>
 
@@ -14,7 +16,7 @@
 
 
     <!-- Nav Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: tomato;">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: tomato;">
         <a class="navbar-brand" href="#">TinderEats</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -39,6 +41,13 @@
                         <a id="accNav" class="dropdown-item disabled" href="Account.html">View Account</a>
                         <a id="outNav" class="dropdown-item disabled" href="#logOut">Log Out</a>
                     </div>
+                </li>
+                <li>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                        <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
+
+                    </form>
                 </li>
 
             </ul>
@@ -145,24 +154,491 @@
     <!-- End Nav Bar -->
 
 
-
-    <div class="container col-md-11 my-3 mx-3">
-        <h1>Matches</h1>
-        <h4>Here's what we think you'd like</h4>
+    <!-- <button class="btn btn-default btn-lg float-left" style="margin-left: 6.5%; margin-top: 18px;" href="index.html">Keep Swiping</button> -->
+    <div class="conatiner">
+        <a href="index.html" style="margin-left: 6.5%; margin-top: 18px;" class="btn btn-default btn-lg float-left matches-btn">
+        Keep Swiping</a>
     </div>
+    <div class="container col-md-10 my-3 mx-3 text-center">
+        <h3>Your Top Matches Based On What You Liked</h3>
+        
+    </div>
+
+    
+
+    <div class="container col-md-11 my-3 restaurant-entry">
+        <br>
+        <br>
+        <h3 style="color: tomato;"> ★★★★★★★★★★★★★★★★★★★★ Top Match ★★★★★★★★★★★★★★★★★★★★★★★★</h3>
+        <a class="container restaurant-head mx-3" href="Restaurant.html" style="color: black; text-decoration: none;">
+            <div class=" row card card-top text-left mx-3">
+
+                <div class="col col-md-8">
+                    <h2>1. Pines Cuisine  &nbsp; 2.6 km  &nbsp;  ★★★★★</h2>
+                </div>
+                
+
+                <div class="col-md-2"></div>
+            </div>
+        </a>
+
+        <div class="row mx-auto my-auto">
+            <div id="cat1" class="carousel slide w-100" data-interval="false" data-ride="carousel">
+                <div class="carousel-inner w-100" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="col-md-2">
+                            <div class="card card-top card-body">
+                                <a href="Restaurant.html">
+                                    <img class="img-fluid" src="Food/img8.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-2">
+                            <div class="card card-top card-body">
+                                <a href="Restaurant.html">
+                                    <img class="img-fluid" src="Food/img4.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-2">
+                            <div class="card card-top card-body">
+                                <a href="Restaurant.html">
+                                    <img class="img-fluid" src="Food/img3.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-2">
+                            <div class="card card-top card-body">
+                                <a href="Restaurant.html">
+                                    <img class="img-fluid" src="Food/img5.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-2">
+                            <div class="card card-top card-body">
+                                <a href="Restaurant.html">
+                                    <img class="img-fluid" src="Food/img11.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-2">
+                            <div class="card card-top card-body">
+                                <a href="Restaurant.html">
+                                    <img class="img-fluid" src="Food/img1.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <h3 style="color: tomato;"> ★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★</h3>
+    </div>
+    <br>
 
     <div class="container col-md-11 my-3 restaurant-entry">
         <a class="container restaurant-head mx-3" href="Restaurant.html" style="color: black; text-decoration: none;">
             <div class=" row card text-left mx-3">
-                <div class="col">
-                    <h2>Restaurant Name</h2>
+                <div class="col col-md-8">
+                    <h2>2. Crown Eatery  &nbsp; 5.6 km  &nbsp;  ★★★★☆</h2>
                 </div>
-                <div class="col-1">
-                    <h4> 5.6 km</h4>
+                
+
+                <div class="col-md-2"></div>
+            </div>
+        </a>
+
+        <div class="row mx-auto my-auto">
+            <div id="cat1" class="carousel slide w-100" data-interval="false" data-ride="carousel">
+                <div class="carousel-inner w-100" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="col-md-2">
+                            <div class="card card-body">
+                                <a href="Restaurant.html">
+                                    <img class="img-fluid" src="Food/img2.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-2">
+                            <div class="card card-body">
+                                <a href="Restaurant.html">
+                                    <img class="img-fluid" src="Food/img1.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-2">
+                            <div class="card card-body">
+                                <a href="Restaurant.html">
+                                    <img class="img-fluid" src="Food/img6.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-2">
+                            <div class="card card-body">
+                                <a href="Restaurant.html">
+                                    <img class="img-fluid" src="Food/img9.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-2">
+                            <div class="card card-body">
+                                <a href="Restaurant.html">
+                                    <img class="img-fluid" src="Food/img7.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-2">
+                            <div class="card card-body">
+                                <a href="Restaurant.html">
+                                    <img class="img-fluid" src="Food/img8.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-1">
-                    <h4> ★★★★☆</h4>
+
+            </div>
+        </div>
+    </div>
+    <br>
+
+
+    <div class="container col-md-11 my-3 restaurant-entry">
+        <a class="container restaurant-head mx-3" href="Restaurant.html" style="color: black; text-decoration: none;">
+            <div class=" row card text-left mx-3">
+                <div class="col col-md-8">
+                    <h2>3. Lime Pub &nbsp;   4.2 km &nbsp;   ★★★★☆</h2>
                 </div>
+                
+
+                <div class="col-md-2"></div>
+            </div>
+        </a>
+
+        <div class="row mx-auto my-auto">
+            <div id="cat1" class="carousel slide w-100" data-interval="false" data-ride="carousel">
+                <div class="carousel-inner w-100" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="col-md-2">
+                            <div class="card card-body">
+                                <a href="Restaurant.html">
+                                    <img class="img-fluid" src="Food/img3.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-2">
+                            <div class="card card-body">
+                                <a href="Restaurant.html">
+                                    <img class="img-fluid" src="Food/img1.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-2">
+                            <div class="card card-body">
+                                <a href="Restaurant.html">
+                                    <img class="img-fluid" src="Food/img10.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-2">
+                            <div class="card card-body">
+                                <a href="Restaurant.html">
+                                    <img class="img-fluid" src="Food/img12.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-2">
+                            <div class="card card-body">
+                                <a href="Restaurant.html">
+                                    <img class="img-fluid" src="Food/img2.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-2">
+                            <div class="card card-body">
+                                <a href="Restaurant.html">
+                                    <img class="img-fluid" src="Food/img6.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <br>
+
+
+    <div class="container col-md-11 my-3 restaurant-entry">
+        <a class="container restaurant-head mx-3" href="Restaurant.html" style="color: black; text-decoration: none;">
+            <div class=" row card text-left mx-3">
+                <div class="col col-md-8">
+                    <h2>4. The Honeybee Pubhouse  &nbsp; 10.6 km   &nbsp; ★★★★☆</h2>
+                </div>
+                
+
+                <div class="col-md-2"></div>
+            </div>
+        </a>
+
+        <div class="row mx-auto my-auto">
+            <div id="cat1" class="carousel slide w-100" data-interval="false" data-ride="carousel">
+                <div class="carousel-inner w-100" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="col-md-2">
+                            <div class="card card-body">
+                                <a href="Restaurant.html">
+                                    <img class="img-fluid" src="Food/img12.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-2">
+                            <div class="card card-body">
+                                <a href="Restaurant.html">
+                                    <img class="img-fluid" src="Food/img2.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-2">
+                            <div class="card card-body">
+                                <a href="Restaurant.html">
+                                    <img class="img-fluid" src="Food/img9.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-2">
+                            <div class="card card-body">
+                                <a href="Restaurant.html">
+                                    <img class="img-fluid" src="Food/img7.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-2">
+                            <div class="card card-body">
+                                <a href="Restaurant.html">
+                                    <img class="img-fluid" src="Food/img1.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-2">
+                            <div class="card card-body">
+                                <a href="Restaurant.html">
+                                    <img class="img-fluid" src="Food/img8.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <br>
+
+
+    <div class="container col-md-11 my-3 restaurant-entry">
+        <a class="container restaurant-head mx-3" href="Restaurant.html" style="color: black; text-decoration: none;">
+            <div class=" row card text-left mx-3">
+                <div class="col col-md-8">
+                    <h2>5. Tilted Delight & Co &nbsp;  1.7 km  &nbsp;  ★★★★☆</h2>
+                </div>
+                
+
+                <div class="col-md-2"></div>
+            </div>
+        </a>
+
+        <div class="row mx-auto my-auto">
+            <div id="cat1" class="carousel slide w-100" data-interval="false" data-ride="carousel">
+                <div class="carousel-inner w-100" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="col-md-2">
+                            <div class="card card-body">
+                                <a href="Restaurant.html">
+                                    <img class="img-fluid" src="Food/img8.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-2">
+                            <div class="card card-body">
+                                <a href="Restaurant.html">
+                                    <img class="img-fluid" src="Food/img7.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-2">
+                            <div class="card card-body">
+                                <a href="Restaurant.html">
+                                    <img class="img-fluid" src="Food/img6.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-2">
+                            <div class="card card-body">
+                                <a href="Restaurant.html">
+                                    <img class="img-fluid" src="Food/img5.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-2">
+                            <div class="card card-body">
+                                <a href="Restaurant.html">
+                                    <img class="img-fluid" src="Food/img4.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-2">
+                            <div class="card card-body">
+                                <a href="Restaurant.html">
+                                    <img class="img-fluid" src="Food/img3.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <br>
+
+
+    <div class="container col-md-11 my-3 restaurant-entry">
+        <a class="container restaurant-head mx-3" href="Restaurant.html" style="color: black; text-decoration: none;">
+            <div class=" row card text-left mx-3">
+                <div class="col col-md-8">
+                    <h2>6. The Garden Kitchen  &nbsp; 8.1 km  &nbsp;  ★★★★☆</h2>
+                </div>
+                
+
+                <div class="col-md-2"></div>
+            </div>
+        </a>
+
+        <div class="row mx-auto my-auto">
+            <div id="cat1" class="carousel slide w-100" data-interval="false" data-ride="carousel">
+                <div class="carousel-inner w-100" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="col-md-2">
+                            <div class="card card-body">
+                                <a href="Restaurant.html">
+                                    <img class="img-fluid" src="Food/img3.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-2">
+                            <div class="card card-body">
+                                <a href="Restaurant.html">
+                                    <img class="img-fluid" src="Food/img4.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-2">
+                            <div class="card card-body">
+                                <a href="Restaurant.html">
+                                    <img class="img-fluid" src="Food/img12.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-2">
+                            <div class="card card-body">
+                                <a href="Restaurant.html">
+                                    <img class="img-fluid" src="Food/img11.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-2">
+                            <div class="card card-body">
+                                <a href="Restaurant.html">
+                                    <img class="img-fluid" src="Food/img7.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-2">
+                            <div class="card card-body">
+                                <a href="Restaurant.html">
+                                    <img class="img-fluid" src="Food/img5.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <br>
+
+
+    <div class="container col-md-11 my-3 restaurant-entry">
+        <a class="container restaurant-head mx-3" href="Restaurant.html" style="color: black; text-decoration: none;">
+            <div class=" row card text-left mx-3">
+                <div class="col col-md-8">
+                    <h2>7. Little Apple Tapa's &nbsp;  3.1 km  &nbsp;  ★★★★☆</h2>
+                </div>
+                
 
                 <div class="col-md-2"></div>
             </div>
@@ -230,19 +706,16 @@
             </div>
         </div>
     </div>
+    <br>
+
 
     <div class="container col-md-11 my-3 restaurant-entry">
         <a class="container restaurant-head mx-3" href="Restaurant.html" style="color: black; text-decoration: none;">
             <div class=" row card text-left mx-3">
-                <div class="col">
-                    <h2>Restaurant Name</h2>
+                <div class="col col-md-8">
+                    <h2>8. Street Eats   6.9 km    ★★★★☆</h2>
                 </div>
-                <div class="col-1">
-                    <h4> 5.6 km</h4>
-                </div>
-                <div class="col-1">
-                    <h4> ★★★★☆</h4>
-                </div>
+                
 
                 <div class="col-md-2"></div>
             </div>
@@ -255,7 +728,7 @@
                         <div class="col-md-2">
                             <div class="card card-body">
                                 <a href="Restaurant.html">
-                                    <img class="img-fluid" src="Food/img1.jpg">
+                                    <img class="img-fluid" src="Food/img11.jpg">
                                 </a>
                             </div>
                         </div>
@@ -264,7 +737,7 @@
                         <div class="col-md-2">
                             <div class="card card-body">
                                 <a href="Restaurant.html">
-                                    <img class="img-fluid" src="Food/img2.jpg">
+                                    <img class="img-fluid" src="Food/img12.jpg">
                                 </a>
                             </div>
                         </div>
@@ -273,7 +746,7 @@
                         <div class="col-md-2">
                             <div class="card card-body">
                                 <a href="Restaurant.html">
-                                    <img class="img-fluid" src="Food/img3.jpg">
+                                    <img class="img-fluid" src="Food/img10.jpg">
                                 </a>
                             </div>
                         </div>
@@ -282,16 +755,66 @@
                         <div class="col-md-2">
                             <div class="card card-body">
                                 <a href="Restaurant.html">
-                                    <img class="img-fluid" src="Food/img4.jpg">
+                                    <img class="img-fluid" src="Food/img7.jpg">
                                 </a>
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
+                        <div class="col-md-2">
+                            <div class="card card-body">
+                                <a href="Restaurant.html">
+                                    <img class="img-fluid" src="Food/img9.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-2">
+                            <div class="card card-body">
+                                <a href="Restaurant.html">
+                                    <img class="img-fluid" src="Food/img8.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <br>
+
+
+    <div class="container col-md-11 my-3 restaurant-entry">
+        <a class="container restaurant-head mx-3" href="Restaurant.html" style="color: black; text-decoration: none;">
+            <div class=" row card text-left mx-3">
+                <div class="col col-md-8">
+                    <h2>9. tastes n taps   12.2 km    ★★★★☆</h2>
+                </div>
+                
+
+                <div class="col-md-2"></div>
+            </div>
+        </a>
+
+        <div class="row mx-auto my-auto">
+            <div id="cat1" class="carousel slide w-100" data-interval="false" data-ride="carousel">
+                <div class="carousel-inner w-100" role="listbox">
+                    <div class="carousel-item active">
                         <div class="col-md-2">
                             <div class="card card-body">
                                 <a href="Restaurant.html">
                                     <img class="img-fluid" src="Food/img5.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="col-md-2">
+                            <div class="card card-body">
+                                <a href="Restaurant.html">
+                                    <img class="img-fluid" src="Food/img7.jpg">
                                 </a>
                             </div>
                         </div>
@@ -305,36 +828,11 @@
                             </div>
                         </div>
                     </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <div class="container col-md-11 my-3 restaurant-entry">
-        <a class="container restaurant-head mx-3" href="Restaurant.html" style="color: black; text-decoration: none;">
-            <div class=" row card text-left mx-3">
-                <div class="col">
-                    <h2>Restaurant Name</h2>
-                </div>
-                <div class="col-1">
-                    <h4> 5.6 km</h4>
-                </div>
-                <div class="col-1">
-                    <h4> ★★★★☆</h4>
-                </div>
-
-                <div class="col-md-2"></div>
-            </div>
-        </a>
-
-        <div class="row mx-auto my-auto">
-            <div id="cat1" class="carousel slide w-100" data-interval="false" data-ride="carousel">
-                <div class="carousel-inner w-100" role="listbox">
-                    <div class="carousel-item active">
+                    <div class="carousel-item">
                         <div class="col-md-2">
                             <div class="card card-body">
                                 <a href="Restaurant.html">
-                                    <img class="img-fluid" src="Food/img1.jpg">
+                                    <img class="img-fluid" src="Food/img8.jpg">
                                 </a>
                             </div>
                         </div>
@@ -343,7 +841,7 @@
                         <div class="col-md-2">
                             <div class="card card-body">
                                 <a href="Restaurant.html">
-                                    <img class="img-fluid" src="Food/img2.jpg">
+                                    <img class="img-fluid" src="Food/img10.jpg">
                                 </a>
                             </div>
                         </div>
@@ -352,34 +850,7 @@
                         <div class="col-md-2">
                             <div class="card card-body">
                                 <a href="Restaurant.html">
-                                    <img class="img-fluid" src="Food/img3.jpg">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="col-md-2">
-                            <div class="card card-body">
-                                <a href="Restaurant.html">
-                                    <img class="img-fluid" src="Food/img4.jpg">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="col-md-2">
-                            <div class="card card-body">
-                                <a href="Restaurant.html">
-                                    <img class="img-fluid" src="Food/img5.jpg">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="col-md-2">
-                            <div class="card card-body">
-                                <a href="Restaurant.html">
-                                    <img class="img-fluid" src="Food/img6.jpg">
+                                    <img class="img-fluid" src="Food/img9.jpg">
                                 </a>
                             </div>
                         </div>
@@ -389,164 +860,10 @@
             </div>
         </div>
     </div>
-    <div class="container col-md-11 my-3 restaurant-entry">
-        <a class="container restaurant-head mx-3" href="Restaurant.html" style="color: black; text-decoration: none;">
-            <div class=" row card text-left mx-3">
-                <div class="col">
-                    <h2>Restaurant Name</h2>
-                </div>
-                <div class="col-1">
-                    <h4> 5.6 km</h4>
-                </div>
-                <div class="col-1">
-                    <h4> ★★★★☆</h4>
-                </div>
+    <br>
 
-                <div class="col-md-2"></div>
-            </div>
-        </a>
 
-        <div class="row mx-auto my-auto">
-            <div id="cat1" class="carousel slide w-100" data-interval="false" data-ride="carousel">
-                <div class="carousel-inner w-100" role="listbox">
-                    <div class="carousel-item active">
-                        <div class="col-md-2">
-                            <div class="card card-body">
-                                <a href="Restaurant.html">
-                                    <img class="img-fluid" src="Food/img1.jpg">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="col-md-2">
-                            <div class="card card-body">
-                                <a href="Restaurant.html">
-                                    <img class="img-fluid" src="Food/img2.jpg">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="col-md-2">
-                            <div class="card card-body">
-                                <a href="Restaurant.html">
-                                    <img class="img-fluid" src="Food/img3.jpg">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="col-md-2">
-                            <div class="card card-body">
-                                <a href="Restaurant.html">
-                                    <img class="img-fluid" src="Food/img4.jpg">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="col-md-2">
-                            <div class="card card-body">
-                                <a href="Restaurant.html">
-                                    <img class="img-fluid" src="Food/img5.jpg">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="col-md-2">
-                            <div class="card card-body">
-                                <a href="Restaurant.html">
-                                    <img class="img-fluid" src="Food/img6.jpg">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <div class="container col-md-11 my-3 restaurant-entry">
-        <a class="container restaurant-head mx-3" href="Restaurant.html" style="color: black; text-decoration: none;">
-            <div class=" row card text-left mx-3">
-                <div class="col">
-                    <h2>Restaurant Name</h2>
-                </div>
-                <div class="col-1">
-                    <h4> 5.6 km</h4>
-                </div>
-                <div class="col-1">
-                    <h4> ★★★★☆</h4>
-                </div>
-
-                <div class="col-md-2"></div>
-            </div>
-        </a>
-
-        <div class="row mx-auto my-auto">
-            <div id="cat1" class="carousel slide w-100" data-interval="false" data-ride="carousel">
-                <div class="carousel-inner w-100" role="listbox">
-                    <div class="carousel-item active">
-                        <div class="col-md-2">
-                            <div class="card card-body">
-                                <a href="Restaurant.html">
-                                    <img class="img-fluid" src="Food/img1.jpg">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="col-md-2">
-                            <div class="card card-body">
-                                <a href="Restaurant.html">
-                                    <img class="img-fluid" src="Food/img2.jpg">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="col-md-2">
-                            <div class="card card-body">
-                                <a href="Restaurant.html">
-                                    <img class="img-fluid" src="Food/img3.jpg">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="col-md-2">
-                            <div class="card card-body">
-                                <a href="Restaurant.html">
-                                    <img class="img-fluid" src="Food/img4.jpg">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="col-md-2">
-                            <div class="card card-body">
-                                <a href="Restaurant.html">
-                                    <img class="img-fluid" src="Food/img5.jpg">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="col-md-2">
-                            <div class="card card-body">
-                                <a href="Restaurant.html">
-                                    <img class="img-fluid" src="Food/img6.jpg">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
+    
 
 
 

@@ -1,5 +1,5 @@
 .checkstyle {
-    margin-right:100px;
+    margin-right: 100px;
 }
 
 label {
@@ -111,6 +111,11 @@ table.table .form-control.error {
 table.table td .add {
     display: none;
 }
-.jumbotron{
+
+.jumbotron {
     margin-left: 10%;
+}
+
+.checkout-btn {
+    width: 100%;
 }

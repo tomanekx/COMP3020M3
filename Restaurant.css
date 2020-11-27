@@ -73,12 +73,12 @@ textarea {
 
 body {
     color: black;
-    background:dimgray;
+    background: dimgray;
     font-family: 'Open Sans', sans-serif;
 }
 
 .checkout-btn {
-    margin-left: 5%;
+    width: 100%;
 }
 
 .table-wrapper {
@@ -173,4 +173,3 @@ table.table .form-control.error {
 table.table td .add {
     display: none;
 }
-

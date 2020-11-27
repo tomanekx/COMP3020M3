@@ -73,3 +73,23 @@ $(".tastes").on('click', function(event){
 
     sessionStorage.setItem("restName", "tastes n taps");
 });
+
+
+
+
+$(".Swipe").on('click', function(event){
+
+    sessionStorage.setItem("fromSwipe", true );
+});
+$(document).ready(function() {
+    if (sessionStorage.getItem("fromSwipe") != null) {
+        $("#myModal").modal('show');
+        sessionStorage.removeItem("fromSwipe");
+    }
+
+
+});
+
+$(function() {
+    $('[data-toggle="tooltip"]').tooltip()
+})

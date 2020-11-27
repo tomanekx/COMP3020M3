@@ -23,18 +23,20 @@ $('.carousel .carousel-item').each(function() {
 $(document).ready(function() {
     var addVal = 0.0;
     var newVal = 0.0;
-    sessionStorage.setItem("currItem", 1.23);
+    var prevVal = 0.0; 
+    sessionStorage.setItem("currItem", 10.00);
     $("#addCart b").html(sessionStorage.getItem("currItem"));
 
     $("#option").change(function() {
         addVal = Number($("input[name=options]:checked").val());
-        sessionStorage.setItem("currItem", sessionStorage.getItem("currItem") + addVal);
+        newVal = addVal - prevVal + Number(sessionStorage.getItem("currItem"));
+        sessionStorage.setItem("currItem", newVal);
         $("#addCart b").html(sessionStorage.getItem("currItem"));
     })
 
     $("#addon1").click(function() {
-        addVal = Number($("addon1").val());
-        if ($("addon1").is("checked")) {
+        addVal = Number($("#addon1").val());
+        if ($("#addon1").is("checked")) {
             newVal = addVal + Number(sessionStorage.getItem("currItem"));
             sessionStorage.setItem("currItem", newVal);
         } else {

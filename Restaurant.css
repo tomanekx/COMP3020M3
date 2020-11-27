@@ -145,7 +145,7 @@ table.table td a.edit {
 }
 
 table.table td a.delete {
-    color: #E34724;
+    color: tomato;
 }
 
 table.table td i {
@@ -172,4 +172,9 @@ table.table .form-control.error {
 
 table.table td .add {
     display: none;
+}
+
+.modal-body{
+    max-height: 70vh;
+    overflow-y: auto;
 }
